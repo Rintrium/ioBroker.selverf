@@ -68,8 +68,8 @@
 		]
 	},
 	"native": {
-		"option1": true,
-		"option2": "42"
+		"option1": "ich bin ein Text",
+		"option2": "ttyUSB0"
 	},
 	"objects": [],
 	"instanceObjects": []

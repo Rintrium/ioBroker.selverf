@@ -1,5 +1,6 @@
 "use strict";
 
+const { Adapter } = require("@iobroker/adapter-core");
 /*
  * Created with @iobroker/create-adapter v1.34.0
  */
@@ -7,6 +8,10 @@
 // The adapter-core module gives you access to the core ioBroker functions
 // you need to create an adapter
 const utils = require("@iobroker/adapter-core");
+const { log, info } = require("console");
+
+const SelveUSBGateway       = require("./lib/selveUSBGateway.js");
+
 
 // Load your modules here, e.g.:
 // const fs = require("fs");
@@ -36,6 +41,7 @@ class Selverf extends utils.Adapter {
 
 		// The adapters config (in the instance object everything under the attribute "native") is accessible via
 		// this.config:
+		this.config.option2 = "/dev/ttyUSB0";
 		this.log.info("config option1: " + this.config.option1);
 		this.log.info("config option2: " + this.config.option2);
 
@@ -83,6 +89,17 @@ class Selverf extends utils.Adapter {
 
 		result = await this.checkGroupAsync("admin", "admin");
 		this.log.info("check group user admin group admin: " + result);
+
+		let ergebnis;
+
+		this.log.error("Ich bin eine Testnachricht!");
+
+		this.log.info("Führe Modulfunktion aus");
+		await SelveUSBGateway.InitializeUSBGateway("testPath123456").then(
+			result => ergebnis = "es hat geklappt",
+			error => ergebnis = "es hat nicht geklappt :(");
+
+		this.log.info(SelveUSBGateway.ReturnPath() + " " + ergebnis);
 	}
 
 	/**
