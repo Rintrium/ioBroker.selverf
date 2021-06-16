@@ -1,0 +1,76 @@
+{
+	"common": {
+		"name": "selverf",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"titleLang": {
+			"en": "SelveRF",
+			"de": "SelveRF",
+			"ru": "SelveRF",
+			"pt": "SelveRF",
+			"nl": "SelveRF",
+			"fr": "SelveRF",
+			"it": "SelveRF",
+			"es": "SelveRF",
+			"pl": "SelveRF",
+			"zh-cn": "SelveRF"
+		},
+		"desc": {
+			"en": "Verbindung zu Selve Geräten mittels USB-Gateway",
+			"de": "Verbindung zu Selve Geräten mittels USB-Gateway",
+			"ru": "Verbindung zu Selve Geräten mittels USB-Gateway",
+			"pt": "Verbindung zu Selve Geräten mittels USB-Gateway",
+			"nl": "Verbindung zu Selve Geräten mittels USB-Gateway",
+			"fr": "Verbindung zu Selve Geräten mittels USB-Gateway",
+			"it": "Verbindung zu Selve Geräten mittels USB-Gateway",
+			"es": "Verbindung zu Selve Geräten mittels USB-Gateway",
+			"pl": "Verbindung zu Selve Geräten mittels USB-Gateway",
+			"zh-cn": "Verbindung zu Selve Geräten mittels USB-Gateway"
+		},
+		"authors": [
+			"Rintrium <matthias@tebbe.cloud>"
+		],
+		"keywords": [
+			"Gateway",
+			"Selve",
+			"Rollershutter"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"icon": "selverf.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/Rintrium/ioBroker.selverf/master/admin/selverf.png",
+		"readme": "https://github.com/Rintrium/ioBroker.selverf/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "iot-systems",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "push",
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
