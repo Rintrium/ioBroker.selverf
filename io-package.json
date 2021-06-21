@@ -68,8 +68,7 @@
 		]
 	},
 	"native": {
-		"option1": true,
-		"option2": "42"
+		"usbGatewayPath": "/dev/ttyUSB0"
 	},
 	"objects": [],
 	"instanceObjects": []

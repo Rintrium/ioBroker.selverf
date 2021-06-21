@@ -18,7 +18,9 @@
     "url": "https://github.com/Rintrium/ioBroker.selverf"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^2.5.0"
+    "@iobroker/adapter-core": "^2.5.0",
+    "serialport": "^9.1.0",
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {
     "@alcalzone/release-script": "^1.10.0",
