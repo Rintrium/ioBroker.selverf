@@ -14,9 +14,9 @@ systemDictionary = {
 		"pl": "Ustawienia adaptera dla selverf",
 		"zh-cn": "selverf的适配器设置"
 	},
-	"option1": {
-		"en": "option1",
-		"de": "option1",
+	"usbGatewayPath": {
+		"en": "Path to the USB Gateway",
+		"de": "Pfad zum USB Gateway",
 		"ru": "option1",
 		"pt": "option1",
 		"nl": "option1",
@@ -25,17 +25,5 @@ systemDictionary = {
 		"es": "option1",
 		"pl": "option1",
 		"zh-cn": "option1"
-	},
-	"option2": {
-		"en": "option2",
-		"de": "option2",
-		"ru": "option2",
-		"pt": "option2",
-		"nl": "option2",
-		"fr": "option2",
-		"it": "option2",
-		"es": "option2",
-		"pl": "option2",
-		"zh-cn": "option2"
 	}
 };

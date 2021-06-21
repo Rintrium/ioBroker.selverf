@@ -10,7 +10,7 @@ const { Adapter } = require("@iobroker/adapter-core");
 const utils = require("@iobroker/adapter-core");
 const { log, info } = require("console");
 
-const SelveUSBGateway       = require("./lib/selveUSBGateway.js");
+const SelveUSBGateway       = require("./lib/SelveUSBGateway.js");
 
 
 // Load your modules here, e.g.:
@@ -31,6 +31,8 @@ class Selverf extends utils.Adapter {
 		// this.on("objectChange", this.onObjectChange.bind(this));
 		// this.on("message", this.onMessage.bind(this));
 		this.on("unload", this.onUnload.bind(this));
+
+		this.gateway = new SelveUSBGateway(this);
 	}
 
 	/**
@@ -41,15 +43,13 @@ class Selverf extends utils.Adapter {
 
 		// The adapters config (in the instance object everything under the attribute "native") is accessible via
 		// this.config:
-		this.config.option2 = "/dev/ttyUSB0";
-		this.log.info("config option1: " + this.config.option1);
-		this.log.info("config option2: " + this.config.option2);
 
 		/*
 		For every state in the system there has to be also an object of type state
 		Here a simple template for a boolean variable named "testVariable"
 		Because every adapter instance uses its own unique namespace variable names can't collide with other adapters variables
 		*/
+		/*
 		await this.setObjectNotExistsAsync("testVariable", {
 			type: "state",
 			common: {
@@ -60,7 +60,7 @@ class Selverf extends utils.Adapter {
 				write: true,
 			},
 			native: {},
-		});
+		});*/
 
 		// In order to get state updates, you need to subscribe to them. The following line adds a subscription for our variable we have created above.
 		this.subscribeStates("testVariable");
@@ -84,7 +84,7 @@ class Selverf extends utils.Adapter {
 		await this.setStateAsync("testVariable", { val: true, ack: true, expire: 30 });
 
 		// examples for the checkPassword/checkGroup functions
-		let result = await this.checkPasswordAsync("admin", "iobroker");
+		/*let result = await this.checkPasswordAsync("admin", "iobroker");
 		this.log.info("check user admin pw iobroker: " + result);
 
 		result = await this.checkGroupAsync("admin", "admin");
@@ -99,7 +99,9 @@ class Selverf extends utils.Adapter {
 			result => ergebnis = "es hat geklappt",
 			error => ergebnis = "es hat nicht geklappt :(");
 
-		this.log.info(SelveUSBGateway.ReturnPath() + " " + ergebnis);
+		this.log.info(SelveUSBGateway.ReturnPath() + " " + ergebnis);*/
+
+		this.gateway.ConnectUSBGateway();
 	}
 
 	/**
@@ -113,6 +115,8 @@ class Selverf extends utils.Adapter {
 			// clearTimeout(timeout2);
 			// ...
 			// clearInterval(interval1);
+
+			this.gateway.Unload();
 
 			callback();
 		} catch (e) {

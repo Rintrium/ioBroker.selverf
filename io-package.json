@@ -68,8 +68,7 @@
 		]
 	},
 	"native": {
-		"option1": "ich bin ein Text",
-		"option2": "ttyUSB0"
+		"usbGatewayPath": "/dev/ttyUSB0"
 	},
 	"objects": [],
 	"instanceObjects": []
