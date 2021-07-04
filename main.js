@@ -49,6 +49,7 @@ class Selverf extends utils.Adapter {
 		Here a simple template for a boolean variable named "testVariable"
 		Because every adapter instance uses its own unique namespace variable names can't collide with other adapters variables
 		*/
+	
 		/*
 		await this.setObjectNotExistsAsync("testVariable", {
 			type: "state",
