@@ -31,7 +31,7 @@ class Selverf extends utils.Adapter {
 		// this.on("objectChange", this.onObjectChange.bind(this));
 		// this.on("message", this.onMessage.bind(this));
 		this.on("unload", this.onUnload.bind(this));
-
+		
 		this.gateway = new SelveUSBGateway(this);
 	}
 
@@ -102,7 +102,13 @@ class Selverf extends utils.Adapter {
 
 		this.log.info(SelveUSBGateway.ReturnPath() + " " + ergebnis);*/
 
+		this.gateway.eventEmitter.addListener("connected", this.onConnectionWithGateway.bind(this));
 		this.gateway.ConnectUSBGateway();
+	}
+
+	onConnectionWithGateway()
+	{
+		this.gateway.GetActuatorIDs();
 	}
 
 	/**
