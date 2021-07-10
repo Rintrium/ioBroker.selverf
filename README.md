@@ -16,7 +16,7 @@
 Verbindung zu Selve Geräten mittels USB-Gateway
 
 
-### **WORK IN PROGRESS**
+### 0.1.0 (2021-07-10)
 * First implementation of commeo actuators
 
 ## 0.0.1 (2021-06-16)
