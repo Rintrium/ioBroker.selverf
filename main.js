@@ -31,7 +31,7 @@ class Selverf extends utils.Adapter {
 		// this.on("objectChange", this.onObjectChange.bind(this));
 		// this.on("message", this.onMessage.bind(this));
 		this.on("unload", this.onUnload.bind(this));
-
+		
 		this.gateway = new SelveUSBGateway(this);
 	}
 
@@ -102,7 +102,16 @@ class Selverf extends utils.Adapter {
 
 		this.log.info(SelveUSBGateway.ReturnPath() + " " + ergebnis);*/
 
+		this.gateway.eventEmitter.addListener("connected", this.onConnectionWithGateway.bind(this));
 		this.gateway.ConnectUSBGateway();
+	}
+
+	onConnectionWithGateway()
+	{
+		//try
+		//{
+		this.gateway.GetCommeoActuatorIDs();
+		//} catch(err) {this.log.info("cought: " + err.toString());}
 	}
 
 	/**
@@ -150,7 +159,10 @@ class Selverf extends utils.Adapter {
 	onStateChange(id, state) {
 		if (state) {
 			// The state was changed
-			this.log.info(`state ${id} changed: ${state.val} (ack = ${state.ack})`);
+			//this.log.info(`state ${id} changed: ${state.val} (ack = ${state.ack})`);
+
+			//State changes without ack were not changed by this adapter, so they must be handled
+			if (!state.ack) this.gateway.HandleSubscribedStateChange(id, state);
 		} else {
 			// The state was deleted
 			this.log.info(`state ${id} deleted`);
