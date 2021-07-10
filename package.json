@@ -4,7 +4,7 @@
   "description": "Verbindung zu Selve Geräten mittels USB-Gateway",
   "author": {
     "name": "Rintrium",
-    "email": "matthias@tebbe.cloud"
+    "email": "main@rintrium.de"
   },
   "homepage": "https://github.com/Rintrium/ioBroker.selverf",
   "license": "MIT",
