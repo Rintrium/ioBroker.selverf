@@ -15,10 +15,11 @@
 
 Verbindung zu Selve Geräten mittels USB-Gateway
 
-## Changelog
-* v.0.1.0: First implementation of commeo actuators
 
-### 0.1.0 (2021-07-10)
+## **WORK IN PROGRESS**
+* First implementation of commeo actuators
+
+## 0.0.1 (2021-06-16)
 * (Rintrium) initial release
 
 ## License
