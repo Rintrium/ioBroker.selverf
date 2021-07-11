@@ -1,7 +1,7 @@
 {
   "name": "iobroker.selverf",
   "version": "0.1.0",
-  "description": "Verbindung zu Selve Geräten mittels USB-Gateway",
+  "description": "Connection with Selve actuators and sensors through USB-Gateway",
   "author": {
     "name": "Rintrium",
     "email": "main@rintrium.de"

@@ -1,5 +1,5 @@
 ![Logo](admin/selverf.png)
-# ioBroker.selverf
+# ioBroker.selveRF
 
 [![NPM version](https://img.shields.io/npm/v/iobroker.selverf.svg)](https://www.npmjs.com/package/iobroker.selverf)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.selverf.svg)](https://www.npmjs.com/package/iobroker.selverf)
@@ -11,7 +11,7 @@
 
 **Tests:** ![Test and Release](https://github.com/Rintrium/ioBroker.selverf/workflows/Test%20and%20Release/badge.svg)
 
-## selverf adapter for ioBroker
+## selveRF adapter for ioBroker
 
 Connection with Selve actuators and sensors through USB-Gateway
 
