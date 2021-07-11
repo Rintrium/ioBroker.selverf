@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.2.2",
+        "version": "0.2.3",
         "news": {
+            "0.2.3": {
+                "en": "Implemented fault code handling from gateway",
+                "de": "Fehlercode-Handling vom Gateway implementiert",
+                "ru": "Реализована обработка кода неисправности из шлюза.",
+                "pt": "Implementado tratamento de código de falha do gateway",
+                "nl": "Geïmplementeerde foutcodeafhandeling vanaf gateway",
+                "fr": "Gestion des codes d'erreur implémentée à partir de la passerelle",
+                "it": "Gestione del codice di errore implementata dal gateway",
+                "es": "Manejo de código de falla implementado desde la puerta de enlace",
+                "pl": "Zaimplementowana obsługa kodów błędów z bramki",
+                "zh-cn": "从网关实施故障代码处理"
+            },
             "0.2.2": {
                 "en": "Improved logging",
                 "de": "Verbesserte Protokollierung",
