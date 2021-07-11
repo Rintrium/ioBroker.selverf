@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "news": {
+            "0.2.1": {
+                "en": "Serialport now properly closes, when the adapter is stopped\nsmall bugfixes",
+                "de": "Serialport wird jetzt ordnungsgemäß geschlossen, wenn der Adapter gestoppt wird\nkleine Bugfixes",
+                "ru": "Последовательный порт теперь правильно закрывается при остановке адаптера.\nмелкие исправления",
+                "pt": "A porta serial agora fecha corretamente, quando o adaptador é interrompido\npequenas correções de bugs",
+                "nl": "Serialport sluit nu correct wanneer de adapter wordt gestopt\nkleine bugfixes",
+                "fr": "Le port série se ferme désormais correctement, lorsque l'adaptateur est arrêté\npetites corrections de bugs",
+                "it": "La porta seriale ora si chiude correttamente, quando l'adattatore è fermo\npiccole correzioni di bug",
+                "es": "Serialport ahora se cierra correctamente, cuando el adaptador se detiene\npequeñas correcciones de errores",
+                "pl": "Port szeregowy jest teraz poprawnie zamykany, gdy adapter jest zatrzymany\nmałe poprawki błędów",
+                "zh-cn": "Serialport 现在正确关闭，当适配器停止时\n小错误修正"
+            },
             "0.2.0": {
                 "en": "Refactored parts of the code and added more comments\nImplemented more states for commeo actuators",
                 "de": "Teile des Codes überarbeitet und weitere Kommentare hinzugefügt\nWeitere Zustände für commeo-Aktoren implementiert",
