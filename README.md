@@ -13,10 +13,11 @@
 
 ## selverf adapter for ioBroker
 
-Verbindung zu Selve Geräten mittels USB-Gateway
+Connection with Selve actuators and sensors through USB-Gateway
 
 ### WIP
 * Refactored parts of the code and added more comments
+* Implemented more states for commeo actuators
 ### 0.1.0 (2021-07-10)
 * First implementation of commeo actuators
 
