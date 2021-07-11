@@ -16,6 +16,10 @@
 Connection with Selve actuators and sensors through USB-Gateway
 
 ## Changelog
+
+### **WORK IN PROGRESS**
+* Serialport now properly closes, when the adapter is stopped
+* small bugfixes
 ### 0.2.0 (2021-07-11)
 * Refactored parts of the code and added more comments
 * Implemented more states for commeo actuators

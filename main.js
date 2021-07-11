@@ -31,7 +31,7 @@ class Selverf extends utils.Adapter {
 		// this.on("objectChange", this.onObjectChange.bind(this));
 		// this.on("message", this.onMessage.bind(this));
 		this.on("unload", this.onUnload.bind(this));
-		
+
 		this.gateway = new SelveUSBGateway(this);
 	}
 
@@ -58,7 +58,6 @@ class Selverf extends utils.Adapter {
 	 */
 	onUnload(callback) {
 		try {
-			
 
 			this.gateway.Unload();
 
