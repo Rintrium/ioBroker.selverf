@@ -15,6 +15,7 @@
 
 Connection with Selve actuators and sensors through USB-Gateway
 
+## Changelog
 ### WIP
 * Refactored parts of the code and added more comments
 * Implemented more states for commeo actuators
