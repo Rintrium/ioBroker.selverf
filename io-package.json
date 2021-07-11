@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "news": {
+            "0.2.0": {
+                "en": "Refactored parts of the code and added more comments\nImplemented more states for commeo actuators",
+                "de": "Teile des Codes überarbeitet und weitere Kommentare hinzugefügt\nWeitere Zustände für commeo-Aktoren implementiert",
+                "ru": "Отредактированы части кода и добавлены дополнительные комментарии\nРеализовано больше состояний для коммо-актуаторов.",
+                "pt": "Refatorou partes do código e adicionou mais comentários\nImplementado mais estados para atuadores commeo",
+                "nl": "Herstructureerde delen van de code en voegde meer opmerkingen toe\nMeer statussen geïmplementeerd voor commeo-actuators",
+                "fr": "Refactorisé des parties du code et ajouté plus de commentaires\nImplémentation de plus d'états pour les actionneurs commeo",
+                "it": "Refactoring di parti del codice e aggiunti altri commenti\nImplementati più stati per gli attuatori commeo",
+                "es": "Se refactorizaron partes del código y se agregaron más comentarios.\nImplementado más estados para actuadores commeo",
+                "pl": "Zrefaktorowałem fragmenty kodu i dodałem więcej komentarzy\nWdrożono więcej stanów dla siłowników commeo",
+                "zh-cn": "重构了部分代码并添加了更多注释\n为 commeo 执行器实现了更多状态"
+            },
             "0.1.0": {
                 "en": "* First implementation of commeo actuators\n\n## 0.0.1 (2021-06-16)\n* initial release\n\n## License\nMIT License\n\nCopyright (c) 2021 Rintrium <main@rintrium.de>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
                 "de": "* Erste Implementierung von commeo-Antrieben\n\n## 0.0.1 (2021-06-16)\n* Erstveröffentlichung\n\n## Lizenz\nMIT-Lizenz\n\nCopyright (c) 2021 Rintrium<main@rintrium.de>\n\nDie Erlaubnis wird hiermit jeder Person, die eine Kopie erhält, kostenlos erteilt\ndieser Software und der zugehörigen Dokumentationsdateien (die \"Software\"), um\nan der Software uneingeschränkt, einschließlich und ohne Einschränkung der Rechte\nzu verwenden, kopieren, modifizieren, zusammenführen, veröffentlichen, verteilen, unterlizenzieren und/oder verkaufen\nKopien der Software zu erstellen und Personen, denen die Software zur Verfügung steht,\ndazu unter folgenden Bedingungen bereitgestellt:\n\nDer obige Urheberrechtshinweis und dieser Erlaubnishinweis müssen in allen enthalten sein\nKopien oder wesentliche Teile der Software.\n\nDIE SOFTWARE WIRD \"WIE BESEHEN\", OHNE JEGLICHE GEWÄHRLEISTUNG, AUSDRÜCKLICH ODER\nSTILLSCHWEIGEND, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF DIE GARANTIEN DER MARKTGÄNGIGKEIT,\nEIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND NICHTVERLETZUNG. IN KEINEM FALL SOLL DAS\nAUTOREN ODER URHEBERRECHTSINHABER HAFTEN FÜR JEGLICHE ANSPRÜCHE, SCHÄDEN ODER ANDERES\nHAFTUNG, OB AUS VERTRAGSHANDELN, UNERLAUBTER ODER ANDERWEITIG, AUS,\nAUSSER ODER IN VERBINDUNG MIT DER SOFTWARE ODER DER NUTZUNG ODER ANDEREN HANDELN IN DER\nSOFTWARE.",
@@ -84,17 +96,19 @@
         "usbGatewayPath": "/dev/ttyUSB0"
     },
     "objects": [],
-    "instanceObjects": [{
-        "_id": "info.connection",
-        "type": "state",
-        "common": {
-            "role": "indicator.connected",
-            "name": "If communication with the USB-Gateway works",
-            "type": "boolean",
-            "read": true,
-            "write": false,
-            "def": false
-        },
-        "native": {}
-    }]
+    "instanceObjects": [
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "If communication with the USB-Gateway works",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
 }
