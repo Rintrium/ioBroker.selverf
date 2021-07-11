@@ -21,8 +21,7 @@ Connection with Selve actuators and sensors through USB-Gateway
 * Implemented more states for commeo actuators
 ### 0.1.0 (2021-07-10)
 * First implementation of commeo actuators
-
-## 0.0.1 (2021-06-16)
+### 0.0.1 (2021-06-16)
 * (Rintrium) initial release
 
 ## License
