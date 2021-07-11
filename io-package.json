@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.2.1",
+        "version": "0.2.2",
         "news": {
+            "0.2.2": {
+                "en": "Improved logging",
+                "de": "Verbesserte Protokollierung",
+                "ru": "Улучшенное ведение журнала",
+                "pt": "Registro aprimorado",
+                "nl": "Verbeterde logboekregistratie",
+                "fr": "Journalisation améliorée",
+                "it": "Registrazione migliorata",
+                "es": "Registro mejorado",
+                "pl": "Ulepszone rejestrowanie",
+                "zh-cn": "改进的日志记录"
+            },
             "0.2.1": {
                 "en": "Serialport now properly closes, when the adapter is stopped\nsmall bugfixes",
                 "de": "Serialport wird jetzt ordnungsgemäß geschlossen, wenn der Adapter gestoppt wird\nkleine Bugfixes",
