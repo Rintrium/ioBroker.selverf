@@ -1,6 +1,7 @@
 {
     "common": {
         "name": "selverf",
+        "title": "selveRF",
         "version": "0.1.0",
         "news": {
             "0.1.0": {
@@ -41,16 +42,16 @@
             "zh-cn": "SelveRF"
         },
         "desc": {
-            "en": "Verbindung zu Selve Geräten mittels USB-Gateway",
+            "en": "Connection with Selve actuators and sensors through USB-Gateway",
             "de": "Verbindung zu Selve Geräten mittels USB-Gateway",
-            "ru": "Verbindung zu Selve Geräten mittels USB-Gateway",
-            "pt": "Verbindung zu Selve Geräten mittels USB-Gateway",
-            "nl": "Verbindung zu Selve Geräten mittels USB-Gateway",
-            "fr": "Verbindung zu Selve Geräten mittels USB-Gateway",
-            "it": "Verbindung zu Selve Geräten mittels USB-Gateway",
-            "es": "Verbindung zu Selve Geräten mittels USB-Gateway",
-            "pl": "Verbindung zu Selve Geräten mittels USB-Gateway",
-            "zh-cn": "Verbindung zu Selve Geräten mittels USB-Gateway"
+            "ru": "Connection with Selve actuators and sensors through USB-Gateway",
+            "pt": "Connection with Selve actuators and sensors through USB-Gateway",
+            "nl": "Connection with Selve actuators and sensors through USB-Gateway",
+            "fr": "Connection with Selve actuators and sensors through USB-Gateway",
+            "it": "Connection with Selve actuators and sensors through USB-Gateway",
+            "es": "Connection with Selve actuators and sensors through USB-Gateway",
+            "pl": "Connection with Selve actuators and sensors through USB-Gateway",
+            "zh-cn": "Connection with Selve actuators and sensors through USB-Gateway"
         },
         "authors": [
             "Rintrium <main@rintrium.de>"
@@ -83,5 +84,17 @@
         "usbGatewayPath": "/dev/ttyUSB0"
     },
     "objects": [],
-    "instanceObjects": []
+    "instanceObjects": [{
+        "_id": "info.connection",
+        "type": "state",
+        "common": {
+            "role": "indicator.connected",
+            "name": "If communication with the USB-Gateway works",
+            "type": "boolean",
+            "read": true,
+            "write": false,
+            "def": false
+        },
+        "native": {}
+    }]
 }

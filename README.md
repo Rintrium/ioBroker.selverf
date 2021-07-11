@@ -1,5 +1,5 @@
 ![Logo](admin/selverf.png)
-# ioBroker.selverf
+# ioBroker.selveRF
 
 [![NPM version](https://img.shields.io/npm/v/iobroker.selverf.svg)](https://www.npmjs.com/package/iobroker.selverf)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.selverf.svg)](https://www.npmjs.com/package/iobroker.selverf)
@@ -11,15 +11,17 @@
 
 **Tests:** ![Test and Release](https://github.com/Rintrium/ioBroker.selverf/workflows/Test%20and%20Release/badge.svg)
 
-## selverf adapter for ioBroker
+## selveRF adapter for ioBroker
 
-Verbindung zu Selve Geräten mittels USB-Gateway
+Connection with Selve actuators and sensors through USB-Gateway
 
-
+## Changelog
+### WIP
+* Refactored parts of the code and added more comments
+* Implemented more states for commeo actuators
 ### 0.1.0 (2021-07-10)
 * First implementation of commeo actuators
-
-## 0.0.1 (2021-06-16)
+### 0.0.1 (2021-06-16)
 * (Rintrium) initial release
 
 ## License
