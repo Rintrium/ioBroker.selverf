@@ -1,6 +1,6 @@
 {
   "name": "iobroker.selverf",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Connection with Selve actuators and sensors through USB-Gateway",
   "author": {
     "name": "Rintrium",

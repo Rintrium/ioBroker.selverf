@@ -17,7 +17,7 @@ Connection with Selve actuators and sensors through USB-Gateway
 
 ## Changelog
 
-### **WORK IN PROGRESS**
+### 0.3.0 (2021-07-14)
 * Implemented ability to receive multiple gateway messages from one message through the serialport
 * Implemented handling of of command.result
 * Implemented aggregation of commands to send
