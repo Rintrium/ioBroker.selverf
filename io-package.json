@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.2.3",
+        "version": "0.3.0",
         "news": {
+            "0.3.0": {
+                "en": "Implemented ability to receive multiple gateway messages from one message through the serialport\nImplemented handling of of command.result\nImplemented aggregation of commands to send",
+                "de": "Implementierte Möglichkeit, mehrere Gateway-Nachrichten von einer Nachricht über den seriellen Port zu empfangen\nImplementierte Behandlung von command.result\nImplementierte Aggregation von Befehlen zum Senden",
+                "ru": "Реализована возможность получать несколько сообщений шлюза из одного сообщения через последовательный порт.\nРеализована обработка command.result\nРеализована агрегация команд для отправки",
+                "pt": "Capacidade implementada de receber várias mensagens de gateway de uma mensagem por meio da porta serial\nTratamento implementado de command.result\nAgregação implementada de comandos para enviar",
+                "nl": "Geïmplementeerde mogelijkheid om meerdere gateway-berichten van één bericht te ontvangen via de seriële poort\nGeïmplementeerde afhandeling van command.result\nGeïmplementeerde aggregatie van opdrachten om te verzenden",
+                "fr": "Capacité implémentée de recevoir plusieurs messages de passerelle à partir d'un message via le port série\nImplémentation de la gestion de command.result\nAgrégation implémentée des commandes à envoyer",
+                "it": "Capacità implementata di ricevere più messaggi gateway da un messaggio attraverso la porta seriale\nGestione implementata di command.result\nAggregazione implementata di comandi da inviare",
+                "es": "Capacidad implementada para recibir múltiples mensajes de puerta de enlace de un mensaje a través del puerto serie\nManejo implementado de command.result\nAgregación implementada de comandos para enviar",
+                "pl": "Zaimplementowana możliwość odbierania wielu wiadomości bramy z jednej wiadomości przez port szeregowy\nWdrożona obsługa command.result\nWdrożona agregacja poleceń do wysłania",
+                "zh-cn": "实现了通过串行端口从一条消息接收多个网关消息的能力\n实现对 command.result 的处理\n实现了要发送的命令的聚合"
+            },
             "0.2.3": {
                 "en": "Implemented fault code handling from gateway",
                 "de": "Fehlercode-Handling vom Gateway implementiert",
