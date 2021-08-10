@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.3.0",
+        "version": "0.3.1",
         "news": {
+            "0.3.1": {
+                "en": "Implemented retries for message sending and automatic adapter restarts",
+                "de": "Implementierte Wiederholungsversuche für das Senden von Nachrichten und automatische Neustarts des Adapters",
+                "ru": "Реализованы повторные попытки отправки сообщений и автоматический перезапуск адаптера.",
+                "pt": "Novas tentativas implementadas para envio de mensagens e reinicializações automáticas do adaptador",
+                "nl": "Geïmplementeerde nieuwe pogingen voor het verzenden van berichten en automatische herstart van de adapter",
+                "fr": "Nouvelles tentatives implémentées pour l'envoi de messages et redémarrages automatiques de l'adaptateur",
+                "it": "Tentativi implementati per l'invio dei messaggi e il riavvio automatico dell'adattatore",
+                "es": "Reintentos implementados para el envío de mensajes y reinicios automáticos del adaptador",
+                "pl": "Wdrożone ponawianie prób wysyłania wiadomości i automatyczne restarty adaptera",
+                "zh-cn": "实现了消息发送和自动适配器重启的重试"
+            },
             "0.3.0": {
                 "en": "Implemented ability to receive multiple gateway messages from one message through the serialport\nImplemented handling of of command.result\nImplemented aggregation of commands to send",
                 "de": "Implementierte Möglichkeit, mehrere Gateway-Nachrichten von einer Nachricht über den seriellen Port zu empfangen\nImplementierte Behandlung von command.result\nImplementierte Aggregation von Befehlen zum Senden",
