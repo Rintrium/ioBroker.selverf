@@ -54,6 +54,7 @@ class Selverf extends utils.Adapter {
 		this.setStateAsync("info.connection", { val: false, ack: true });
 
 		this.gateway.eventEmitter.addListener("connected", this.onConnectionWithGateway.bind(this));
+		this.gateway.eventEmitter.addListener("reconnected", this.onReconnectionWithGateway.bind(this));
 		this.gateway.ConnectUSBGateway();
 	}
 
@@ -62,6 +63,11 @@ class Selverf extends utils.Adapter {
 		this.setStateAsync("info.connection", { val: true, ack: true });
 
 		this.gateway.GetCommeoActuatorIDs();
+	}
+
+	onReconnectionWithGateway()
+	{
+		this.setStateAsync("info.connection", { val: true, ack: true });
 	}
 
 	/**
