@@ -17,6 +17,9 @@ Connection with Selve actuators and sensors through USB-Gateway
 
 ## Changelog
 
+### WORK IN PROGRESS ###
+* Added logo
+
 ### 0.3.1 (2021-08-10)
 * Implemented retries for message sending and automatic adapter restarts
 
