@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.3.2",
+        "version": "0.3.3",
         "news": {
+            "0.3.3": {
+                "en": "Fix fatal crash when a timeout occurs",
+                "de": "Behebung eines schwerwiegenden Absturzes bei einem Timeout",
+                "ru": "Исправить фатальный сбой при истечении времени ожидания",
+                "pt": "Corrigir falha fatal quando ocorre um tempo limite",
+                "nl": "Fatale crash repareren wanneer een time-out optreedt",
+                "fr": "Correction d'un crash fatal lorsqu'un délai d'attente se produit",
+                "it": "Risolto crash fatale quando si verifica un timeout",
+                "es": "Solucionar un bloqueo fatal cuando se agota el tiempo de espera",
+                "pl": "Napraw fatalną awarię po przekroczeniu limitu czasu",
+                "zh-cn": "修复超时发生时的致命崩溃"
+            },
             "0.3.2": {
                 "en": "Added logo\nChanges for testing",
                 "de": "Logo hinzugefügt\nÄnderungen zum Testen",

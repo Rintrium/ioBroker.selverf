@@ -17,7 +17,7 @@ Connection with Selve actuators and sensors through USB-Gateway (right now only 
 
 ## Changelog
 
-### **WORK IN PROGRESS**
+### 0.3.3 (2021-08-24)
 * Fix fatal crash when a timeout occurs
 
 ### 0.3.2 (2021-08-24)
