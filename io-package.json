@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.3.1",
+        "version": "0.3.2",
         "news": {
+            "0.3.2": {
+                "en": "Added logo\nChanges for testing",
+                "de": "Logo hinzugefügt\nÄnderungen zum Testen",
+                "ru": "Добавлен логотип\nИзменения для тестирования",
+                "pt": "Adicionado logo\nMudanças para teste",
+                "nl": "Logo toegevoegd\nWijzigingen voor testen",
+                "fr": "Logo ajouté\nModifications pour les tests",
+                "it": "Logo aggiunto\nModifiche per il test",
+                "es": "Logotipo añadido\nCambios para la prueba",
+                "pl": "Dodano logo\nZmiany do testów",
+                "zh-cn": "添加了徽标\n测试更改"
+            },
             "0.3.1": {
                 "en": "Implemented retries for message sending and automatic adapter restarts",
                 "de": "Implementierte Wiederholungsversuche für das Senden von Nachrichten und automatische Neustarts des Adapters",
