@@ -17,7 +17,7 @@ Connection with Selve actuators and sensors through USB-Gateway (right now only 
 
 ## Changelog
 
-### WORK IN PROGRESS ###
+### **WORK IN PROGRESS**
 * Added logo
 * Changes for testing
 
