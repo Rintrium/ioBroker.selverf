@@ -2,8 +2,32 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.3.1",
+        "version": "0.3.3",
         "news": {
+            "0.3.3": {
+                "en": "Fix fatal crash when a timeout occurs",
+                "de": "Behebung eines schwerwiegenden Absturzes bei einem Timeout",
+                "ru": "Исправить фатальный сбой при истечении времени ожидания",
+                "pt": "Corrigir falha fatal quando ocorre um tempo limite",
+                "nl": "Fatale crash repareren wanneer een time-out optreedt",
+                "fr": "Correction d'un crash fatal lorsqu'un délai d'attente se produit",
+                "it": "Risolto crash fatale quando si verifica un timeout",
+                "es": "Solucionar un bloqueo fatal cuando se agota el tiempo de espera",
+                "pl": "Napraw fatalną awarię po przekroczeniu limitu czasu",
+                "zh-cn": "修复超时发生时的致命崩溃"
+            },
+            "0.3.2": {
+                "en": "Added logo\nChanges for testing",
+                "de": "Logo hinzugefügt\nÄnderungen zum Testen",
+                "ru": "Добавлен логотип\nИзменения для тестирования",
+                "pt": "Adicionado logo\nMudanças para teste",
+                "nl": "Logo toegevoegd\nWijzigingen voor testen",
+                "fr": "Logo ajouté\nModifications pour les tests",
+                "it": "Logo aggiunto\nModifiche per il test",
+                "es": "Logotipo añadido\nCambios para la prueba",
+                "pl": "Dodano logo\nZmiany do testów",
+                "zh-cn": "添加了徽标\n测试更改"
+            },
             "0.3.1": {
                 "en": "Implemented retries for message sending and automatic adapter restarts",
                 "de": "Implementierte Wiederholungsversuche für das Senden von Nachrichten und automatische Neustarts des Adapters",
