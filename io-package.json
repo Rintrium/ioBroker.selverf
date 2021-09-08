@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.3.3",
+        "version": "0.3.4",
         "news": {
+            "0.3.4": {
+                "en": "More robust message receiving from gateway (incomplete messages now get discarded)\nBugfix for the reconnection routine\nAdded scaled position",
+                "de": "Robusterer Nachrichtenempfang vom Gateway (unvollständige Nachrichten werden jetzt verworfen)\nBugfix für die Wiederverbindungsroutine\nSkalierte Position hinzugefügt",
+                "ru": "Более надежное получение сообщений от шлюза (неполные сообщения теперь отбрасываются)\nИсправление для процедуры переподключения\nДобавлена масштабированная позиция",
+                "pt": "Recebimento de mensagem mais robusto do gateway (mensagens incompletas agora são descartadas)\nCorreção de bug para a rotina de reconexão\nAdicionada posição escalonada",
+                "nl": "Krachtiger bericht ontvangen van gateway (onvolledige berichten worden nu weggegooid)\nBugfix voor de herverbindingsroutine\nGeschaalde positie toegevoegd",
+                "fr": "Réception de messages plus robuste de la passerelle (les messages incomplets sont désormais supprimés)\nCorrection d'un bug pour la routine de reconnexion\nPosition mise à l'échelle ajoutée",
+                "it": "Ricezione messaggi più robusta dal gateway (i messaggi incompleti ora vengono scartati)\nBugfix per la routine di riconnessione\nAggiunta posizione in scala",
+                "es": "Recepción de mensajes más robusta desde la puerta de enlace (los mensajes incompletos ahora se descartan)\nCorrección de errores para la rutina de reconexión\nPosición escalada agregada",
+                "pl": "Bardziej niezawodne odbieranie wiadomości z bramy (niekompletne wiadomości są teraz odrzucane)\nPoprawka błędu procedury ponownego połączenia\nDodano przeskalowaną pozycję",
+                "zh-cn": "从网关接收更强大的消息（不完整的消息现在被丢弃）\n重新连接例程的错误修正\n添加了缩放位置"
+            },
             "0.3.3": {
                 "en": "Fix fatal crash when a timeout occurs",
                 "de": "Behebung eines schwerwiegenden Absturzes bei einem Timeout",
