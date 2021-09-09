@@ -19,6 +19,7 @@ Connection with Selve actuators and sensors through USB-Gateway (right now only 
 
 ### **WORK IN PROGRESS**
 * Bugfix in message receiving
+* Updated dependencies
 
 ### 0.3.4 (2021-09-08)
 * More robust message receiving from gateway (incomplete messages now get discarded)
