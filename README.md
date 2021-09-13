@@ -17,7 +17,7 @@ Connection with Selve actuators and sensors through USB-Gateway (right now only 
 
 ## Changelog
 
-### **WORK IN PROGRESS**
+### 0.3.5 (2021-09-13)
 * Bugfix in message receiving
 * Updated dependencies
 
