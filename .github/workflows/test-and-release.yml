@@ -34,6 +34,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
 
             - name: Install Dependencies
+              run: sed -i 's/ssh:/https:/g' ./package-lock.json
               run: npm ci
 
             - name: Lint source code
