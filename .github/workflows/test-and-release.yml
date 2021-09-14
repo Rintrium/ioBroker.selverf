@@ -64,6 +64,14 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: ${{ matrix.node-version }}
+              
+            - name: Prepare package-lock.json (mac)
+              if: startsWith(runner.OS, 'macos')
+              run: sed -i s/ssh:/https:/g ./package-lock.json
+
+            - name: Prepare package-lock.json (linux and windows)
+              if: startsWith(runner.OS, 'macos') == false
+              run: sed -i 's/ssh:/https:/g' ./package-lock.json
 
             - name: Install Dependencies
               run: npm ci
