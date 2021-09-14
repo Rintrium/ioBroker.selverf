@@ -67,7 +67,10 @@ jobs:
               
             - name: Prepare package-lock.json (mac)
               if: startsWith(runner.OS, 'macos')
-              run: sed -i s/ssh:/https:/g ./package-lock.json
+              run: |
+                brew install gnu-sed
+                alias sed=gsed
+                sed -i s/ssh:/https:/g ./package-lock.json
 
             - name: Prepare package-lock.json (linux and windows)
               if: startsWith(runner.OS, 'macos') == false
