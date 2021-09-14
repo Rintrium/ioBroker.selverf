@@ -70,7 +70,7 @@ jobs:
               run: |
                 brew install gnu-sed
                 alias sed=gsed
-                sed -i s/ssh:/https:/g ./package-lock.json
+                sed -i 's/ssh:/https:/g' ./package-lock.json
 
             - name: Prepare package-lock.json (linux and windows)
               if: startsWith(runner.OS, 'macos') == false
