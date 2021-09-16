@@ -62,6 +62,7 @@ class Selverf extends utils.Adapter {
 	{
 		this.setStateAsync("info.connection", { val: true, ack: true });
 
+		this.gateway.GetGatewayVersion();
 		this.gateway.GetCommeoActuatorIDs();
 	}
 
