@@ -22,6 +22,7 @@ Connection with Selve actuators and sensors through USB-Gateway (right now only 
 * Bugfix in command enqueueing
 * Added wait time after fault code from gateway before next try
 * Added small delay while sending multiple messages
+* Remove unsuccessful ping messages from sending queue
 
 ### 0.3.5 (2021-09-13)
 * Bugfix in message receiving
