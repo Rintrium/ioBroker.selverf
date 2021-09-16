@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.3.5",
+        "version": "0.3.6",
         "news": {
+            "0.3.6": {
+                "en": "Improved debug logging\nBugfix in command enqueueing\nAdded wait time after fault code from gateway before next try\nAdded small delay while sending multiple messages\nRemove unsuccessful ping messages from sending queue",
+                "de": "Verbessertes Debug-Logging\nBugfix beim Einreihen von Befehlen\nWartezeit nach Fehlercode vom Gateway vor dem nächsten Versuch hinzugefügt\nKleine Verzögerung beim Senden mehrerer Nachrichten hinzugefügt\nEntfernen Sie erfolglose Ping-Nachrichten aus der Sendewarteschlange",
+                "ru": "Улучшенное ведение журнала отладки\nИсправление в постановке команд в очередь\nДобавлено время ожидания после кода неисправности от шлюза перед следующей попыткой\nДобавлена небольшая задержка при отправке нескольких сообщений\nУдалить неудачные ping-сообщения из очереди отправки",
+                "pt": "Registro de depuração aprimorado\nCorreção de bug no enfileiramento de comandos\nAdicionado tempo de espera após o código de falha do gateway antes da próxima tentativa\nAdicionado pequeno atraso ao enviar várias mensagens\nRemover mensagens de ping malsucedidas da fila de envio",
+                "nl": "Verbeterde logboekregistratie voor foutopsporing\nBugfix in opdrachtwachtrij\nWachttijd toegevoegd na foutcode van gateway voor volgende poging\nKleine vertraging toegevoegd bij het verzenden van meerdere berichten\nVerwijder mislukte ping-berichten uit de verzendwachtrij",
+                "fr": "Journalisation de débogage améliorée\nCorrection d'un bug dans la mise en file d'attente des commandes\nAjout du temps d'attente après le code d'erreur de la passerelle avant le prochain essai\nAjout d'un petit délai lors de l'envoi de plusieurs messages\nSupprimer les messages ping infructueux de la file d'attente d'envoi",
+                "it": "Registrazione debug migliorata\nBugfix nell'accodamento dei comandi\nAggiunto tempo di attesa dopo il codice di errore dal gateway prima del prossimo tentativo\nAggiunto piccolo ritardo durante l'invio di più messaggi\nRimuovi i messaggi ping non riusciti dalla coda di invio",
+                "es": "Registro de depuración mejorado\nCorrección de errores en la puesta en cola de comandos\nSe agregó tiempo de espera después del código de falla de la puerta de enlace antes del próximo intento\nSe agregó un pequeño retraso al enviar varios mensajes\nEliminar mensajes de ping fallidos de la cola de envío",
+                "pl": "Ulepszone rejestrowanie debugowania\nPoprawka błędu kolejkowania poleceń\nDodano czas oczekiwania po kodzie błędu z bramki przed następną próbą\nDodano małe opóźnienie podczas wysyłania wielu wiadomości\nUsuń nieudane wiadomości ping z kolejki wysyłania",
+                "zh-cn": "改进的调试日志记录\n命令入队中的错误修复\n在下次尝试之前添加了网关故障代码后的等待时间\n发送多条消息时增加了小延迟\n从发送队列中删除不成功的 ping 消息"
+            },
             "0.3.5": {
                 "en": "Bugfix in message receiving\nUpdated dependencies",
                 "de": "Bugfix beim Nachrichtenempfang\nAktualisierte Abhängigkeiten",
