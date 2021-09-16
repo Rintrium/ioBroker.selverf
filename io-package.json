@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.3.6",
+        "version": "0.3.7",
         "news": {
+            "0.3.7": {
+                "en": "Bugfix",
+                "de": "Fehlerbehebung",
+                "ru": "Исправлена ошибка",
+                "pt": "Bugfix",
+                "nl": "Bugfix",
+                "fr": "Correction d'un bug",
+                "it": "Risoluzione del problema",
+                "es": "Arreglo del fallo",
+                "pl": "Naprawa błędów",
+                "zh-cn": "错误修正"
+            },
             "0.3.6": {
                 "en": "Improved debug logging\nBugfix in command enqueueing\nAdded wait time after fault code from gateway before next try\nAdded small delay while sending multiple messages\nRemove unsuccessful ping messages from sending queue",
                 "de": "Verbessertes Debug-Logging\nBugfix beim Einreihen von Befehlen\nWartezeit nach Fehlercode vom Gateway vor dem nächsten Versuch hinzugefügt\nKleine Verzögerung beim Senden mehrerer Nachrichten hinzugefügt\nEntfernen Sie erfolglose Ping-Nachrichten aus der Sendewarteschlange",
