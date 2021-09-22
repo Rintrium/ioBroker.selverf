@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.3.7",
+        "version": "0.4.0",
         "news": {
+            "0.4.0": {
+                "en": "Added iveo actuators\nAdded sensors",
+                "de": "iveo-Aktoren hinzugefügt\nSensoren hinzugefügt",
+                "ru": "Добавлены приводы iveo\nДобавлены датчики",
+                "pt": "Adicionados atuadores iveo\nSensores adicionados",
+                "nl": "Iveo-actuatoren toegevoegd\nSensoren toegevoegd",
+                "fr": "Ajout d'actionneurs iveo\nCapteurs ajoutés",
+                "it": "Attuatori iveo aggiunti\nSensori aggiunti",
+                "es": "Actuadores iveo agregados\nSensores agregados",
+                "pl": "Dodano siłowniki iveo\nDodano czujniki",
+                "zh-cn": "添加了 iveo 执行器\n添加传感器"
+            },
             "0.3.7": {
                 "en": "Bugfix",
                 "de": "Fehlerbehebung",
