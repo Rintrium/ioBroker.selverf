@@ -13,9 +13,13 @@
 
 ## selveRF adapter for ioBroker
 
-Connection with Selve actuators and sensors through USB-Gateway (right now only commeo actuators are supported)
+Connection with Selve actuators and sensors through USB-Gateway
 
 ## Changelog
+
+### **WORK IN PROGRESS**
+*Added iveo actuators
+*Added sensors
 
 ### 0.3.7 (2021-09-16)
 * Bugfix

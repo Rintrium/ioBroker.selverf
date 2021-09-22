@@ -64,6 +64,8 @@ class Selverf extends utils.Adapter {
 
 		this.gateway.GetGatewayVersion();
 		this.gateway.GetCommeoActuatorIDs();
+		this.gateway.GetIveoActuatorIDs();
+		this.gateway.GetSensorIDs();
 	}
 
 	onReconnectionWithGateway()
