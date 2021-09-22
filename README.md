@@ -18,8 +18,8 @@ Connection with Selve actuators and sensors through USB-Gateway
 ## Changelog
 
 ### 0.4.0 (2021-09-22)
-*Added iveo actuators
-*Added sensors
+* Added iveo actuators
+* Added sensors
 
 ### 0.3.7 (2021-09-16)
 * Bugfix
