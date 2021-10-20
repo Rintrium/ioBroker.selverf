@@ -19,6 +19,7 @@ Connection with Selve actuators, sensors and senders through USB-Gateway
 
 ### **WORK IN PROGRESS**
 * Added support for senders
+* iveo actuators now have "lastSentCommand" to keep track of the status of the actuator
 
 ### 0.4.0 (2021-09-22)
 * Added iveo actuators
