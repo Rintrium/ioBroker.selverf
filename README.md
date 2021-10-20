@@ -17,7 +17,7 @@ Connection with Selve actuators, sensors and senders through USB-Gateway
 
 ## Changelog
 
-### *WORK IN PROGRESS*
+### **WORK IN PROGRESS**
 * Added support for senders
 
 ### 0.4.0 (2021-09-22)
