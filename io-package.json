@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.4.0",
+        "version": "0.5.0",
         "news": {
+            "0.5.0": {
+                "en": "Added support for senders\niveo actuators now have \"lastSentCommand\" to keep track of the status of the actuator",
+                "de": "Unterstützung für Absender hinzugefügt\niveo Aktoren verfügen jetzt über „lastSentCommand“, um den Status des Aktors zu verfolgen",
+                "ru": "Добавлена поддержка отправителей\nУ приводов iveo теперь есть \"lastSentCommand\" для отслеживания состояния привода.",
+                "pt": "Adicionado suporte para remetentes\nAtuadores iveo agora têm \"lastSentCommand\" para acompanhar o status do atuador",
+                "nl": "Ondersteuning toegevoegd voor afzenders\niveo-actuators hebben nu \"lastSentCommand\" om de status van de actuator bij te houden",
+                "fr": "Ajout du support pour les expéditeurs\nLes actionneurs iveo ont maintenant \"lastSentCommand\" pour garder une trace de l'état de l'actionneur",
+                "it": "Aggiunto supporto per i mittenti\nGli attuatori iveo ora hanno \"lastSentCommand\" per tenere traccia dello stato dell'attuatore",
+                "es": "Soporte agregado para remitentes\nLos actuadores iveo ahora tienen \"lastSentCommand\" para realizar un seguimiento del estado del actuador",
+                "pl": "Dodano wsparcie dla nadawców\nSiłowniki iveo mają teraz funkcję „lastSentCommand”, aby śledzić stan siłownika",
+                "zh-cn": "添加了对发件人的支持\niveo 执行器现在具有“lastSentCommand”来跟踪执行器的状态"
+            },
             "0.4.0": {
                 "en": "Added iveo actuators\nAdded sensors",
                 "de": "iveo-Aktoren hinzugefügt\nSensoren hinzugefügt",
