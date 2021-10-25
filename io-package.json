@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.5.0",
+        "version": "0.5.1",
         "news": {
+            "0.5.1": {
+                "en": "Bugfix",
+                "de": "Fehlerbehebung",
+                "ru": "Исправлена ошибка",
+                "pt": "Bugfix",
+                "nl": "Bugfix",
+                "fr": "Correction d'un bug",
+                "it": "Risoluzione del problema",
+                "es": "Arreglo del fallo",
+                "pl": "Naprawa błędów",
+                "zh-cn": "错误修正"
+            },
             "0.5.0": {
                 "en": "Added support for senders\niveo actuators now have \"lastSentCommand\" to keep track of the status of the actuator",
                 "de": "Unterstützung für Absender hinzugefügt\niveo Aktoren verfügen jetzt über „lastSentCommand“, um den Status des Aktors zu verfolgen",
