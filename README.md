@@ -17,6 +17,9 @@ Connection with Selve actuators, sensors and senders through USB-Gateway
 
 ## Changelog
 
+### **WORK IN PROGRESS**
+* Fixed drivePos2 command for iveo actuators
+
 ### 0.5.1 (2021-10-25)
 * Bugfix
 
