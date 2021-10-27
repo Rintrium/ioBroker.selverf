@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.5.1",
+        "version": "0.5.2",
         "news": {
+            "0.5.2": {
+                "en": "Fixed drivePos2 command for iveo actuators",
+                "de": "Behobener drivePos2-Befehl für iveo-Aktoren",
+                "ru": "Фиксированная команда drivePos2 для приводов iveo",
+                "pt": "Comando drivePos2 fixo para atuadores iveo",
+                "nl": "Vast drivePos2-commando voor iveo-actuators",
+                "fr": "Commande drivePos2 fixe pour les actionneurs iveo",
+                "it": "Comando drivePos2 fisso per attuatori iveo",
+                "es": "Comando drivePos2 fijo para actuadores iveo",
+                "pl": "Naprawiono polecenie drivePos2 dla siłowników iveo",
+                "zh-cn": "修复了 iveo 执行器的 drivePos2 命令"
+            },
             "0.5.1": {
                 "en": "Bugfix",
                 "de": "Fehlerbehebung",
