@@ -2,8 +2,20 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.5.2",
+        "version": "0.5.3",
         "news": {
+            "0.5.3": {
+                "en": "Improved error handling and longer wait period, before the connection with the gateway resets\nscaledPosition was split into scaledPosition and scaledTargetPosition\nInverted states for scaledPosition and scaledTargetPosition were added\nGateway log events now are properly logged in ioBroker as debug-messages",
+                "de": "Verbesserte Fehlerbehandlung und längere Wartezeit, bevor die Verbindung mit dem Gateway zurückgesetzt wird\nscaledPosition wurde in scaledPosition und scaledTargetPosition aufgeteilt\nInvertierte Zustände für scaledPosition und scaledTargetPosition wurden hinzugefügt\nGateway-Protokollereignisse werden jetzt ordnungsgemäß in ioBroker als Debug-Nachrichten protokolliert",
+                "ru": "Улучшенная обработка ошибок и более длительный период ожидания перед сбросом соединения со шлюзом.\nscaledPosition было разделено на scaledPosition и scaledTargetPosition\nДобавлены инвертированные состояния для scaledPosition и scaledTargetPosition\nСобытия журнала шлюза теперь правильно регистрируются в ioBroker как отладочные сообщения.",
+                "pt": "Tratamento de erros aprimorado e período de espera mais longo, antes que a conexão com o gateway seja redefinida\nscaledPosition foi dividido em scaledPosition e scaledTargetPosition\nEstados invertidos para scaledPosition e scaledTargetPosition foram adicionados\nOs eventos de registro do gateway agora são devidamente registrados no ioBroker como mensagens de depuração",
+                "nl": "Verbeterde foutafhandeling en langere wachttijd, voordat de verbinding met de gateway wordt gereset\nscaledPosition is opgesplitst in scaledPosition en scaledTargetPosition\nOmgekeerde statussen voor scaledPosition en scaledTargetPosition zijn toegevoegd\nGateway-logboekgebeurtenissen worden nu correct geregistreerd in ioBroker als foutopsporingsberichten",
+                "fr": "Gestion des erreurs améliorée et période d'attente plus longue, avant la réinitialisation de la connexion avec la passerelle\nscaledPosition a été divisé en scaledPosition et scaledTargetPosition\nDes états inversés pour scaledPosition et scaledTargetPosition ont été ajoutés\nLes événements du journal de la passerelle sont désormais correctement enregistrés dans ioBroker en tant que messages de débogage",
+                "it": "Gestione degli errori migliorata e periodo di attesa più lungo, prima che la connessione con il gateway si ripristini\nscaledPosition è stato suddiviso in scaledPosition e scaledTargetPosition\nSono stati aggiunti stati invertiti per scaledPosition e scaledTargetPosition\nGli eventi del registro del gateway ora vengono registrati correttamente in ioBroker come messaggi di debug",
+                "es": "Manejo de errores mejorado y un período de espera más largo, antes de que se restablezca la conexión con la puerta de enlace\nscaledPosition se dividió en scaledPosition y scaledTargetPosition\nSe agregaron estados invertidos para scaledPosition y scaledTargetPosition\nLos eventos de registro de la puerta de enlace ahora se registran correctamente en ioBroker como mensajes de depuración",
+                "pl": "Ulepszona obsługa błędów i dłuższy czas oczekiwania na zresetowanie połączenia z bramą\nscaledPosition zostało podzielone na scaledPosition i scaledTargetPosition\nDodano stany odwrócone dla scaledPosition i scaledTargetPosition\nZdarzenia dziennika bramy są teraz poprawnie rejestrowane w ioBroker jako komunikaty debugowania",
+                "zh-cn": "在与网关的连接重置之前改进了错误处理和更长的等待时间\nscaledPosition 被拆分为 scaledPosition 和 scaledTargetPosition\n添加了 scaledPosition 和 scaledTargetPosition 的反转状态\n网关日志事件现在作为调试消息正确记录在 ioBroker 中"
+            },
             "0.5.2": {
                 "en": "Fixed drivePos2 command for iveo actuators",
                 "de": "Behobener drivePos2-Befehl für iveo-Aktoren",
