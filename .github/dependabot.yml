@@ -1,0 +1,12 @@
+version: 1
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "03:00"
+    timezone: Europe/Berlin
+  open-pull-requests-limit: 10
+  assignees:
+  - rintrium
+  versioning-strategy: increase
