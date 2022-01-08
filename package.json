@@ -21,7 +21,7 @@
     "@iobroker/adapter-core": "^2.5.0",
     "base-64": "^1.0.0",
     "bitset": "^5.1.1",
-    "serialport": "^9.1.0",
+    "serialport": "^9.2.8",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
