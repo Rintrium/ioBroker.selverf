@@ -17,6 +17,12 @@ Connection with Selve actuators, sensors and senders through USB-Gateway
 
 ## Changelog
 
+### **WORK IN PROGRESS**
+* Improved error handling and longer wait period, before the connection with the gateway resets
+* scaledPosition was split into scaledPosition and scaledTargetPosition
+* Inverted states for scaledPosition and scaledTargetPosition were added
+* Gateway log events now are properly logged in ioBroker as debug-messages
+
 ### 0.5.2 (2021-10-27)
 * Fixed drivePos2 command for iveo actuators
 
