@@ -17,7 +17,7 @@ Connection with Selve actuators, sensors and senders through USB-Gateway
 
 ## Changelog
 
-### **WORK IN PROGRESS**
+### 0.5.3 (2022-01-08)
 * Improved error handling and longer wait period, before the connection with the gateway resets
 * scaledPosition was split into scaledPosition and scaledTargetPosition
 * Inverted states for scaledPosition and scaledTargetPosition were added
@@ -88,7 +88,7 @@ Connection with Selve actuators, sensors and senders through USB-Gateway
 ## License
 MIT License
 
-Copyright (c) 2021 Rintrium <main@rintrium.de>
+Copyright (c) 2021-2022 Rintrium <main@rintrium.de>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
