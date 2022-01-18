@@ -5,7 +5,6 @@
 [![Downloads](https://img.shields.io/npm/dm/iobroker.selverf.svg)](https://www.npmjs.com/package/iobroker.selverf)
 ![Number of Installations (latest)](https://iobroker.live/badges/selverf-installed.svg)
 ![Number of Installations (stable)](https://iobroker.live/badges/selverf-stable.svg)
-[![Dependency Status](https://img.shields.io/david/Rintrium/iobroker.selverf.svg)](https://david-dm.org/Rintrium/iobroker.selverf)
 
 [![NPM](https://nodei.co/npm/iobroker.selverf.png?downloads=true)](https://nodei.co/npm/iobroker.selverf/)
 
