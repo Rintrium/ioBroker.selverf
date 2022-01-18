@@ -39,18 +39,6 @@ class Selverf extends utils.Adapter {
 	 * Is called when databases are connected and adapter received configuration.
 	 */
 	async onReady() {
-		await this.setObjectNotExistsAsync("info.connection", {
-			type: "state",
-			common: {
-				role: "indicator.connected",
-				name: "If communication with the USB-Gateway works",
-				type: "boolean",
-				read: true,
-				write: false,
-				def: false
-			},
-			native: {},
-		});
 		this.setStateAsync("info.connection", { val: false, ack: true });
 
 		this.gateway.eventEmitter.addListener("connected", this.onConnectionWithGateway.bind(this));
