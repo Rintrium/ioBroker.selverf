@@ -6,7 +6,15 @@
         "news": {
             "0.6.1": {
                 "en": "Stable version release\nMinor (non functional) changes",
-                "de": "Stabile version veröffentlich\nKleine (nicht funktionale) Änderungen"
+                "de": "Stabile version veröffentlich\nKleine (nicht funktionale) Änderungen",
+                "ru": "Stable version release\nMinor (non functional) changes",
+                "pt": "Stable version release\nMinor (non functional) changes",
+                "nl": "Stable version release\nMinor (non functional) changes",
+                "fr": "Stable version release\nMinor (non functional) changes",
+                "it": "Stable version release\nMinor (non functional) changes",
+                "es": "Stable version release\nMinor (non functional) changes",
+                "pl": "Stable version release\nMinor (non functional) changes",
+                "zh-cn": "Stable version release\nMinor (non functional) changes"
             },
             "0.5.3": {
                 "en": "Improved error handling and longer wait period, before the connection with the gateway resets\nscaledPosition was split into scaledPosition and scaledTargetPosition\nInverted states for scaledPosition and scaledTargetPosition were added\nGateway log events now are properly logged in ioBroker as debug-messages",
