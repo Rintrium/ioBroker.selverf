@@ -18,6 +18,10 @@ Connection with Selve actuators, sensors and senders through USB-Gateway
 
 ## Changelog
 
+### **WORK IN PROGRESS**
+* Stable version release
+* Minor (non functional) changes
+
 ### 0.5.3 (2022-01-08)
 * Improved error handling and longer wait period, before the connection with the gateway resets
 * scaledPosition was split into scaledPosition and scaledTargetPosition
