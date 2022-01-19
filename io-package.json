@@ -2,8 +2,12 @@
     "common": {
         "name": "selverf",
         "title": "selveRF",
-        "version": "0.5.3",
+        "version": "0.6.1",
         "news": {
+            "0.6.1": {
+                "en": "Stable version release\nMinor (non functional) changes",
+                "de": "Stabile version veröffentlich\nKleine (nicht funktionale) Änderungen"
+            },
             "0.5.3": {
                 "en": "Improved error handling and longer wait period, before the connection with the gateway resets\nscaledPosition was split into scaledPosition and scaledTargetPosition\nInverted states for scaledPosition and scaledTargetPosition were added\nGateway log events now are properly logged in ioBroker as debug-messages",
                 "de": "Verbesserte Fehlerbehandlung und längere Wartezeit, bevor die Verbindung mit dem Gateway zurückgesetzt wird\nscaledPosition wurde in scaledPosition und scaledTargetPosition aufgeteilt\nInvertierte Zustände für scaledPosition und scaledTargetPosition wurden hinzugefügt\nGateway-Protokollereignisse werden jetzt ordnungsgemäß in ioBroker als Debug-Nachrichten protokolliert",
