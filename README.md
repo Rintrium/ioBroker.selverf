@@ -17,8 +17,7 @@ Connection with Selve actuators, sensors and senders through USB-Gateway
 [See the wiki for setup instructions](https://github.com/Rintrium/ioBroker.selverf/wiki)
 
 ## Changelog
-
-### **WORK IN PROGRESS**
+### 0.6.0 (2022-01-19)
 * Stable version release
 * Minor (non functional) changes
 
@@ -75,18 +74,24 @@ Connection with Selve actuators, sensors and senders through USB-Gateway
 * Implemented ability to receive multiple gateway messages from one message through the serialport
 * Implemented handling of of command.result
 * Implemented aggregation of commands to send
+
 ### 0.2.3 (2021-07-11)
 * Implemented fault code handling from gateway
+
 ### 0.2.2 (2021-07-11)
 * Improved logging
+
 ### 0.2.1 (2021-07-11)
 * Serialport now properly closes, when the adapter is stopped
 * small bugfixes
+
 ### 0.2.0 (2021-07-11)
 * Refactored parts of the code and added more comments
 * Implemented more states for commeo actuators
+
 ### 0.1.0 (2021-07-10)
 * First implementation of commeo actuators
+
 ### 0.0.1 (2021-06-16)
 * (Rintrium) initial release
 
