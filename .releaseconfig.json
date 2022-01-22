@@ -1,0 +1,5 @@
+{
+	"dry": true,
+    "bump": "minor",
+	"plugins": ["iobroker"]
+}

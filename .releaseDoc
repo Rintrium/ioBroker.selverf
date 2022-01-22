@@ -1,0 +1,3 @@
+Trigger release with
+
+npm run release -- -c
