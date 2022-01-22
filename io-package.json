@@ -1,326 +1,170 @@
 {
-    "common": {
-        "name": "selverf",
-        "title": "selveRF",
-        "version": "0.6.1",
-        "news": {
-            "0.6.1": {
-                "en": "Stable version release\nMinor (non functional) changes",
-                "de": "Stabile version veröffentlich\nKleine (nicht funktionale) Änderungen",
-                "ru": "Stable version release\nMinor (non functional) changes",
-                "pt": "Stable version release\nMinor (non functional) changes",
-                "nl": "Stable version release\nMinor (non functional) changes",
-                "fr": "Stable version release\nMinor (non functional) changes",
-                "it": "Stable version release\nMinor (non functional) changes",
-                "es": "Stable version release\nMinor (non functional) changes",
-                "pl": "Stable version release\nMinor (non functional) changes",
-                "zh-cn": "Stable version release\nMinor (non functional) changes"
-            },
-            "0.5.3": {
-                "en": "Improved error handling and longer wait period, before the connection with the gateway resets\nscaledPosition was split into scaledPosition and scaledTargetPosition\nInverted states for scaledPosition and scaledTargetPosition were added\nGateway log events now are properly logged in ioBroker as debug-messages",
-                "de": "Verbesserte Fehlerbehandlung und längere Wartezeit, bevor die Verbindung mit dem Gateway zurückgesetzt wird\nscaledPosition wurde in scaledPosition und scaledTargetPosition aufgeteilt\nInvertierte Zustände für scaledPosition und scaledTargetPosition wurden hinzugefügt\nGateway-Protokollereignisse werden jetzt ordnungsgemäß in ioBroker als Debug-Nachrichten protokolliert",
-                "ru": "Улучшенная обработка ошибок и более длительный период ожидания перед сбросом соединения со шлюзом.\nscaledPosition было разделено на scaledPosition и scaledTargetPosition\nДобавлены инвертированные состояния для scaledPosition и scaledTargetPosition\nСобытия журнала шлюза теперь правильно регистрируются в ioBroker как отладочные сообщения.",
-                "pt": "Tratamento de erros aprimorado e período de espera mais longo, antes que a conexão com o gateway seja redefinida\nscaledPosition foi dividido em scaledPosition e scaledTargetPosition\nEstados invertidos para scaledPosition e scaledTargetPosition foram adicionados\nOs eventos de registro do gateway agora são devidamente registrados no ioBroker como mensagens de depuração",
-                "nl": "Verbeterde foutafhandeling en langere wachttijd, voordat de verbinding met de gateway wordt gereset\nscaledPosition is opgesplitst in scaledPosition en scaledTargetPosition\nOmgekeerde statussen voor scaledPosition en scaledTargetPosition zijn toegevoegd\nGateway-logboekgebeurtenissen worden nu correct geregistreerd in ioBroker als foutopsporingsberichten",
-                "fr": "Gestion des erreurs améliorée et période d'attente plus longue, avant la réinitialisation de la connexion avec la passerelle\nscaledPosition a été divisé en scaledPosition et scaledTargetPosition\nDes états inversés pour scaledPosition et scaledTargetPosition ont été ajoutés\nLes événements du journal de la passerelle sont désormais correctement enregistrés dans ioBroker en tant que messages de débogage",
-                "it": "Gestione degli errori migliorata e periodo di attesa più lungo, prima che la connessione con il gateway si ripristini\nscaledPosition è stato suddiviso in scaledPosition e scaledTargetPosition\nSono stati aggiunti stati invertiti per scaledPosition e scaledTargetPosition\nGli eventi del registro del gateway ora vengono registrati correttamente in ioBroker come messaggi di debug",
-                "es": "Manejo de errores mejorado y un período de espera más largo, antes de que se restablezca la conexión con la puerta de enlace\nscaledPosition se dividió en scaledPosition y scaledTargetPosition\nSe agregaron estados invertidos para scaledPosition y scaledTargetPosition\nLos eventos de registro de la puerta de enlace ahora se registran correctamente en ioBroker como mensajes de depuración",
-                "pl": "Ulepszona obsługa błędów i dłuższy czas oczekiwania na zresetowanie połączenia z bramą\nscaledPosition zostało podzielone na scaledPosition i scaledTargetPosition\nDodano stany odwrócone dla scaledPosition i scaledTargetPosition\nZdarzenia dziennika bramy są teraz poprawnie rejestrowane w ioBroker jako komunikaty debugowania",
-                "zh-cn": "在与网关的连接重置之前改进了错误处理和更长的等待时间\nscaledPosition 被拆分为 scaledPosition 和 scaledTargetPosition\n添加了 scaledPosition 和 scaledTargetPosition 的反转状态\n网关日志事件现在作为调试消息正确记录在 ioBroker 中"
-            },
-            "0.5.2": {
-                "en": "Fixed drivePos2 command for iveo actuators",
-                "de": "Behobener drivePos2-Befehl für iveo-Aktoren",
-                "ru": "Фиксированная команда drivePos2 для приводов iveo",
-                "pt": "Comando drivePos2 fixo para atuadores iveo",
-                "nl": "Vast drivePos2-commando voor iveo-actuators",
-                "fr": "Commande drivePos2 fixe pour les actionneurs iveo",
-                "it": "Comando drivePos2 fisso per attuatori iveo",
-                "es": "Comando drivePos2 fijo para actuadores iveo",
-                "pl": "Naprawiono polecenie drivePos2 dla siłowników iveo",
-                "zh-cn": "修复了 iveo 执行器的 drivePos2 命令"
-            },
-            "0.5.1": {
-                "en": "Bugfix",
-                "de": "Fehlerbehebung",
-                "ru": "Исправлена ошибка",
-                "pt": "Bugfix",
-                "nl": "Bugfix",
-                "fr": "Correction d'un bug",
-                "it": "Risoluzione del problema",
-                "es": "Arreglo del fallo",
-                "pl": "Naprawa błędów",
-                "zh-cn": "错误修正"
-            },
-            "0.5.0": {
-                "en": "Added support for senders\niveo actuators now have \"lastSentCommand\" to keep track of the status of the actuator",
-                "de": "Unterstützung für Absender hinzugefügt\niveo Aktoren verfügen jetzt über „lastSentCommand“, um den Status des Aktors zu verfolgen",
-                "ru": "Добавлена поддержка отправителей\nУ приводов iveo теперь есть \"lastSentCommand\" для отслеживания состояния привода.",
-                "pt": "Adicionado suporte para remetentes\nAtuadores iveo agora têm \"lastSentCommand\" para acompanhar o status do atuador",
-                "nl": "Ondersteuning toegevoegd voor afzenders\niveo-actuators hebben nu \"lastSentCommand\" om de status van de actuator bij te houden",
-                "fr": "Ajout du support pour les expéditeurs\nLes actionneurs iveo ont maintenant \"lastSentCommand\" pour garder une trace de l'état de l'actionneur",
-                "it": "Aggiunto supporto per i mittenti\nGli attuatori iveo ora hanno \"lastSentCommand\" per tenere traccia dello stato dell'attuatore",
-                "es": "Soporte agregado para remitentes\nLos actuadores iveo ahora tienen \"lastSentCommand\" para realizar un seguimiento del estado del actuador",
-                "pl": "Dodano wsparcie dla nadawców\nSiłowniki iveo mają teraz funkcję „lastSentCommand”, aby śledzić stan siłownika",
-                "zh-cn": "添加了对发件人的支持\niveo 执行器现在具有“lastSentCommand”来跟踪执行器的状态"
-            },
-            "0.4.0": {
-                "en": "Added iveo actuators\nAdded sensors",
-                "de": "iveo-Aktoren hinzugefügt\nSensoren hinzugefügt",
-                "ru": "Добавлены приводы iveo\nДобавлены датчики",
-                "pt": "Adicionados atuadores iveo\nSensores adicionados",
-                "nl": "Iveo-actuatoren toegevoegd\nSensoren toegevoegd",
-                "fr": "Ajout d'actionneurs iveo\nCapteurs ajoutés",
-                "it": "Attuatori iveo aggiunti\nSensori aggiunti",
-                "es": "Actuadores iveo agregados\nSensores agregados",
-                "pl": "Dodano siłowniki iveo\nDodano czujniki",
-                "zh-cn": "添加了 iveo 执行器\n添加传感器"
-            },
-            "0.3.7": {
-                "en": "Bugfix",
-                "de": "Fehlerbehebung",
-                "ru": "Исправлена ошибка",
-                "pt": "Bugfix",
-                "nl": "Bugfix",
-                "fr": "Correction d'un bug",
-                "it": "Risoluzione del problema",
-                "es": "Arreglo del fallo",
-                "pl": "Naprawa błędów",
-                "zh-cn": "错误修正"
-            },
-            "0.3.6": {
-                "en": "Improved debug logging\nBugfix in command enqueueing\nAdded wait time after fault code from gateway before next try\nAdded small delay while sending multiple messages\nRemove unsuccessful ping messages from sending queue",
-                "de": "Verbessertes Debug-Logging\nBugfix beim Einreihen von Befehlen\nWartezeit nach Fehlercode vom Gateway vor dem nächsten Versuch hinzugefügt\nKleine Verzögerung beim Senden mehrerer Nachrichten hinzugefügt\nEntfernen Sie erfolglose Ping-Nachrichten aus der Sendewarteschlange",
-                "ru": "Улучшенное ведение журнала отладки\nИсправление в постановке команд в очередь\nДобавлено время ожидания после кода неисправности от шлюза перед следующей попыткой\nДобавлена небольшая задержка при отправке нескольких сообщений\nУдалить неудачные ping-сообщения из очереди отправки",
-                "pt": "Registro de depuração aprimorado\nCorreção de bug no enfileiramento de comandos\nAdicionado tempo de espera após o código de falha do gateway antes da próxima tentativa\nAdicionado pequeno atraso ao enviar várias mensagens\nRemover mensagens de ping malsucedidas da fila de envio",
-                "nl": "Verbeterde logboekregistratie voor foutopsporing\nBugfix in opdrachtwachtrij\nWachttijd toegevoegd na foutcode van gateway voor volgende poging\nKleine vertraging toegevoegd bij het verzenden van meerdere berichten\nVerwijder mislukte ping-berichten uit de verzendwachtrij",
-                "fr": "Journalisation de débogage améliorée\nCorrection d'un bug dans la mise en file d'attente des commandes\nAjout du temps d'attente après le code d'erreur de la passerelle avant le prochain essai\nAjout d'un petit délai lors de l'envoi de plusieurs messages\nSupprimer les messages ping infructueux de la file d'attente d'envoi",
-                "it": "Registrazione debug migliorata\nBugfix nell'accodamento dei comandi\nAggiunto tempo di attesa dopo il codice di errore dal gateway prima del prossimo tentativo\nAggiunto piccolo ritardo durante l'invio di più messaggi\nRimuovi i messaggi ping non riusciti dalla coda di invio",
-                "es": "Registro de depuración mejorado\nCorrección de errores en la puesta en cola de comandos\nSe agregó tiempo de espera después del código de falla de la puerta de enlace antes del próximo intento\nSe agregó un pequeño retraso al enviar varios mensajes\nEliminar mensajes de ping fallidos de la cola de envío",
-                "pl": "Ulepszone rejestrowanie debugowania\nPoprawka błędu kolejkowania poleceń\nDodano czas oczekiwania po kodzie błędu z bramki przed następną próbą\nDodano małe opóźnienie podczas wysyłania wielu wiadomości\nUsuń nieudane wiadomości ping z kolejki wysyłania",
-                "zh-cn": "改进的调试日志记录\n命令入队中的错误修复\n在下次尝试之前添加了网关故障代码后的等待时间\n发送多条消息时增加了小延迟\n从发送队列中删除不成功的 ping 消息"
-            },
-            "0.3.5": {
-                "en": "Bugfix in message receiving\nUpdated dependencies",
-                "de": "Bugfix beim Nachrichtenempfang\nAktualisierte Abhängigkeiten",
-                "ru": "Исправление при получении сообщений\nОбновленные зависимости",
-                "pt": "Correção de bug no recebimento de mensagens\nDependências atualizadas",
-                "nl": "Bugfix bij het ontvangen van berichten\nBijgewerkte afhankelijkheden",
-                "fr": "Correction d'un bug dans la réception des messages\nDépendances mises à jour",
-                "it": "Bugfix nella ricezione dei messaggi\nDipendenze aggiornate",
-                "es": "Corrección de errores en la recepción de mensajes\nDependencias actualizadas",
-                "pl": "Poprawka błędu w odbieraniu wiadomości\nZaktualizowane zależności",
-                "zh-cn": "消息接收中的错误修复\n更新的依赖项"
-            },
-            "0.3.4": {
-                "en": "More robust message receiving from gateway (incomplete messages now get discarded)\nBugfix for the reconnection routine\nAdded scaled position",
-                "de": "Robusterer Nachrichtenempfang vom Gateway (unvollständige Nachrichten werden jetzt verworfen)\nBugfix für die Wiederverbindungsroutine\nSkalierte Position hinzugefügt",
-                "ru": "Более надежное получение сообщений от шлюза (неполные сообщения теперь отбрасываются)\nИсправление для процедуры переподключения\nДобавлена масштабированная позиция",
-                "pt": "Recebimento de mensagem mais robusto do gateway (mensagens incompletas agora são descartadas)\nCorreção de bug para a rotina de reconexão\nAdicionada posição escalonada",
-                "nl": "Krachtiger bericht ontvangen van gateway (onvolledige berichten worden nu weggegooid)\nBugfix voor de herverbindingsroutine\nGeschaalde positie toegevoegd",
-                "fr": "Réception de messages plus robuste de la passerelle (les messages incomplets sont désormais supprimés)\nCorrection d'un bug pour la routine de reconnexion\nPosition mise à l'échelle ajoutée",
-                "it": "Ricezione messaggi più robusta dal gateway (i messaggi incompleti ora vengono scartati)\nBugfix per la routine di riconnessione\nAggiunta posizione in scala",
-                "es": "Recepción de mensajes más robusta desde la puerta de enlace (los mensajes incompletos ahora se descartan)\nCorrección de errores para la rutina de reconexión\nPosición escalada agregada",
-                "pl": "Bardziej niezawodne odbieranie wiadomości z bramy (niekompletne wiadomości są teraz odrzucane)\nPoprawka błędu procedury ponownego połączenia\nDodano przeskalowaną pozycję",
-                "zh-cn": "从网关接收更强大的消息（不完整的消息现在被丢弃）\n重新连接例程的错误修正\n添加了缩放位置"
-            },
-            "0.3.3": {
-                "en": "Fix fatal crash when a timeout occurs",
-                "de": "Behebung eines schwerwiegenden Absturzes bei einem Timeout",
-                "ru": "Исправить фатальный сбой при истечении времени ожидания",
-                "pt": "Corrigir falha fatal quando ocorre um tempo limite",
-                "nl": "Fatale crash repareren wanneer een time-out optreedt",
-                "fr": "Correction d'un crash fatal lorsqu'un délai d'attente se produit",
-                "it": "Risolto crash fatale quando si verifica un timeout",
-                "es": "Solucionar un bloqueo fatal cuando se agota el tiempo de espera",
-                "pl": "Napraw fatalną awarię po przekroczeniu limitu czasu",
-                "zh-cn": "修复超时发生时的致命崩溃"
-            },
-            "0.3.2": {
-                "en": "Added logo\nChanges for testing",
-                "de": "Logo hinzugefügt\nÄnderungen zum Testen",
-                "ru": "Добавлен логотип\nИзменения для тестирования",
-                "pt": "Adicionado logo\nMudanças para teste",
-                "nl": "Logo toegevoegd\nWijzigingen voor testen",
-                "fr": "Logo ajouté\nModifications pour les tests",
-                "it": "Logo aggiunto\nModifiche per il test",
-                "es": "Logotipo añadido\nCambios para la prueba",
-                "pl": "Dodano logo\nZmiany do testów",
-                "zh-cn": "添加了徽标\n测试更改"
-            },
-            "0.3.1": {
-                "en": "Implemented retries for message sending and automatic adapter restarts",
-                "de": "Implementierte Wiederholungsversuche für das Senden von Nachrichten und automatische Neustarts des Adapters",
-                "ru": "Реализованы повторные попытки отправки сообщений и автоматический перезапуск адаптера.",
-                "pt": "Novas tentativas implementadas para envio de mensagens e reinicializações automáticas do adaptador",
-                "nl": "Geïmplementeerde nieuwe pogingen voor het verzenden van berichten en automatische herstart van de adapter",
-                "fr": "Nouvelles tentatives implémentées pour l'envoi de messages et redémarrages automatiques de l'adaptateur",
-                "it": "Tentativi implementati per l'invio dei messaggi e il riavvio automatico dell'adattatore",
-                "es": "Reintentos implementados para el envío de mensajes y reinicios automáticos del adaptador",
-                "pl": "Wdrożone ponawianie prób wysyłania wiadomości i automatyczne restarty adaptera",
-                "zh-cn": "实现了消息发送和自动适配器重启的重试"
-            },
-            "0.3.0": {
-                "en": "Implemented ability to receive multiple gateway messages from one message through the serialport\nImplemented handling of of command.result\nImplemented aggregation of commands to send",
-                "de": "Implementierte Möglichkeit, mehrere Gateway-Nachrichten von einer Nachricht über den seriellen Port zu empfangen\nImplementierte Behandlung von command.result\nImplementierte Aggregation von Befehlen zum Senden",
-                "ru": "Реализована возможность получать несколько сообщений шлюза из одного сообщения через последовательный порт.\nРеализована обработка command.result\nРеализована агрегация команд для отправки",
-                "pt": "Capacidade implementada de receber várias mensagens de gateway de uma mensagem por meio da porta serial\nTratamento implementado de command.result\nAgregação implementada de comandos para enviar",
-                "nl": "Geïmplementeerde mogelijkheid om meerdere gateway-berichten van één bericht te ontvangen via de seriële poort\nGeïmplementeerde afhandeling van command.result\nGeïmplementeerde aggregatie van opdrachten om te verzenden",
-                "fr": "Capacité implémentée de recevoir plusieurs messages de passerelle à partir d'un message via le port série\nImplémentation de la gestion de command.result\nAgrégation implémentée des commandes à envoyer",
-                "it": "Capacità implementata di ricevere più messaggi gateway da un messaggio attraverso la porta seriale\nGestione implementata di command.result\nAggregazione implementata di comandi da inviare",
-                "es": "Capacidad implementada para recibir múltiples mensajes de puerta de enlace de un mensaje a través del puerto serie\nManejo implementado de command.result\nAgregación implementada de comandos para enviar",
-                "pl": "Zaimplementowana możliwość odbierania wielu wiadomości bramy z jednej wiadomości przez port szeregowy\nWdrożona obsługa command.result\nWdrożona agregacja poleceń do wysłania",
-                "zh-cn": "实现了通过串行端口从一条消息接收多个网关消息的能力\n实现对 command.result 的处理\n实现了要发送的命令的聚合"
-            },
-            "0.2.3": {
-                "en": "Implemented fault code handling from gateway",
-                "de": "Fehlercode-Handling vom Gateway implementiert",
-                "ru": "Реализована обработка кода неисправности из шлюза.",
-                "pt": "Implementado tratamento de código de falha do gateway",
-                "nl": "Geïmplementeerde foutcodeafhandeling vanaf gateway",
-                "fr": "Gestion des codes d'erreur implémentée à partir de la passerelle",
-                "it": "Gestione del codice di errore implementata dal gateway",
-                "es": "Manejo de código de falla implementado desde la puerta de enlace",
-                "pl": "Zaimplementowana obsługa kodów błędów z bramki",
-                "zh-cn": "从网关实施故障代码处理"
-            },
-            "0.2.2": {
-                "en": "Improved logging",
-                "de": "Verbesserte Protokollierung",
-                "ru": "Улучшенное ведение журнала",
-                "pt": "Registro aprimorado",
-                "nl": "Verbeterde logboekregistratie",
-                "fr": "Journalisation améliorée",
-                "it": "Registrazione migliorata",
-                "es": "Registro mejorado",
-                "pl": "Ulepszone rejestrowanie",
-                "zh-cn": "改进的日志记录"
-            },
-            "0.2.1": {
-                "en": "Serialport now properly closes, when the adapter is stopped\nsmall bugfixes",
-                "de": "Serialport wird jetzt ordnungsgemäß geschlossen, wenn der Adapter gestoppt wird\nkleine Bugfixes",
-                "ru": "Последовательный порт теперь правильно закрывается при остановке адаптера.\nмелкие исправления",
-                "pt": "A porta serial agora fecha corretamente, quando o adaptador é interrompido\npequenas correções de bugs",
-                "nl": "Serialport sluit nu correct wanneer de adapter wordt gestopt\nkleine bugfixes",
-                "fr": "Le port série se ferme désormais correctement, lorsque l'adaptateur est arrêté\npetites corrections de bugs",
-                "it": "La porta seriale ora si chiude correttamente, quando l'adattatore è fermo\npiccole correzioni di bug",
-                "es": "Serialport ahora se cierra correctamente, cuando el adaptador se detiene\npequeñas correcciones de errores",
-                "pl": "Port szeregowy jest teraz poprawnie zamykany, gdy adapter jest zatrzymany\nmałe poprawki błędów",
-                "zh-cn": "Serialport 现在正确关闭，当适配器停止时\n小错误修正"
-            },
-            "0.2.0": {
-                "en": "Refactored parts of the code and added more comments\nImplemented more states for commeo actuators",
-                "de": "Teile des Codes überarbeitet und weitere Kommentare hinzugefügt\nWeitere Zustände für commeo-Aktoren implementiert",
-                "ru": "Отредактированы части кода и добавлены дополнительные комментарии\nРеализовано больше состояний для коммо-актуаторов.",
-                "pt": "Refatorou partes do código e adicionou mais comentários\nImplementado mais estados para atuadores commeo",
-                "nl": "Herstructureerde delen van de code en voegde meer opmerkingen toe\nMeer statussen geïmplementeerd voor commeo-actuators",
-                "fr": "Refactorisé des parties du code et ajouté plus de commentaires\nImplémentation de plus d'états pour les actionneurs commeo",
-                "it": "Refactoring di parti del codice e aggiunti altri commenti\nImplementati più stati per gli attuatori commeo",
-                "es": "Se refactorizaron partes del código y se agregaron más comentarios.\nImplementado más estados para actuadores commeo",
-                "pl": "Zrefaktorowałem fragmenty kodu i dodałem więcej komentarzy\nWdrożono więcej stanów dla siłowników commeo",
-                "zh-cn": "重构了部分代码并添加了更多注释\n为 commeo 执行器实现了更多状态"
-            },
-            "0.1.0": {
-                "en": "* First implementation of commeo actuators\n\n## 0.0.1 (2021-06-16)\n* initial release\n\n## License\nMIT License\n\nCopyright (c) 2021 Rintrium <main@rintrium.de>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
-                "de": "* Erste Implementierung von commeo-Antrieben\n\n## 0.0.1 (2021-06-16)\n* Erstveröffentlichung\n\n## Lizenz\nMIT-Lizenz\n\nCopyright (c) 2021 Rintrium<main@rintrium.de>\n\nDie Erlaubnis wird hiermit jeder Person, die eine Kopie erhält, kostenlos erteilt\ndieser Software und der zugehörigen Dokumentationsdateien (die \"Software\"), um\nan der Software uneingeschränkt, einschließlich und ohne Einschränkung der Rechte\nzu verwenden, kopieren, modifizieren, zusammenführen, veröffentlichen, verteilen, unterlizenzieren und/oder verkaufen\nKopien der Software zu erstellen und Personen, denen die Software zur Verfügung steht,\ndazu unter folgenden Bedingungen bereitgestellt:\n\nDer obige Urheberrechtshinweis und dieser Erlaubnishinweis müssen in allen enthalten sein\nKopien oder wesentliche Teile der Software.\n\nDIE SOFTWARE WIRD \"WIE BESEHEN\", OHNE JEGLICHE GEWÄHRLEISTUNG, AUSDRÜCKLICH ODER\nSTILLSCHWEIGEND, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF DIE GARANTIEN DER MARKTGÄNGIGKEIT,\nEIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND NICHTVERLETZUNG. IN KEINEM FALL SOLL DAS\nAUTOREN ODER URHEBERRECHTSINHABER HAFTEN FÜR JEGLICHE ANSPRÜCHE, SCHÄDEN ODER ANDERES\nHAFTUNG, OB AUS VERTRAGSHANDELN, UNERLAUBTER ODER ANDERWEITIG, AUS,\nAUSSER ODER IN VERBINDUNG MIT DER SOFTWARE ODER DER NUTZUNG ODER ANDEREN HANDELN IN DER\nSOFTWARE.",
-                "ru": "* Первая реализация коммо-актуаторов\n\n## 0.0.1 (16.06.2021)\n* Первый выпуск\n\n## Лицензия\nЛицензия MIT\n\nАвторское право (c) 2021 Rintrium<main@rintrium.de>\n\nРазрешение предоставляется бесплатно любому лицу, получившему копию.\nэтого программного обеспечения и связанных файлов документации («Программное обеспечение») для работы с\nв Программном обеспечении без ограничений, включая, помимо прочего, права\nиспользовать, копировать, изменять, объединять, публиковать, распространять, сублицензировать и / или продавать\nкопий Программного обеспечения и разрешить лицам, которым Программное обеспечение\nпредоставлены для этого при соблюдении следующих условий:\n\nВышеупомянутое уведомление об авторских правах и это уведомление о разрешении должны быть включены во все\nкопии или существенные части Программного обеспечения.\n\nПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, ЯВНЫХ ИЛИ\nПОДРАЗУМЕВАЕМЫЕ, ВКЛЮЧАЯ, НО НЕ ОГРАНИЧИВАЯСЬ, ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ,\nПРИГОДНОСТЬ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ И ЗАЩИТА ОТ ПРАВ. НИ В КОЕМ СЛУЧАЕ\nАВТОРЫ ИЛИ ДЕРЖАТЕЛИ АВТОРСКИХ ПРАВ НЕСУТ ОТВЕТСТВЕННОСТЬ ЗА ЛЮБЫЕ ПРЕТЕНЗИИ, УБЫТКИ ИЛИ ДРУГИЕ\nОТВЕТСТВЕННОСТЬ, ВОЗНИКАЮЩАЯ ЛИ В РЕЗУЛЬТАТЕ ДОГОВОРА, ИЛИ ИНОСТРАННОМУ ИНОСТРАНСТВУ\nБЕЗ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ В СВЯЗИ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ, ИЛИ ИСПОЛЬЗОВАНИЕМ ИЛИ ДРУГИМИ ДЕЛАМИ\nПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ.",
-                "pt": "* Primeira implementação de atuadores commeo\n\n## 0.0.1 (2021-06-16)\n* lançamento inicial\n\n## Licença\nLicença MIT\n\nCopyright (c) 2021 Rintrium<main@rintrium.de>\n\nA permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia\ndeste software e arquivos de documentação associados (o \"Software\"), para lidar\nno Software sem restrição, incluindo, sem limitação, os direitos\npara usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e / ou vender\ncópias do Software, e para permitir que as pessoas a quem o Software é\nfornecido para fazê-lo, sujeito às seguintes condições:\n\nO aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todos\ncópias ou partes substanciais do Software.\n\nO SOFTWARE É FORNECIDO \"COMO ESTÁ\", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU\nIMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO,\nADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NÃO VIOLAÇÃO. EM NENHUMA HIPÓTESE O\nAUTORES OU TITULARES DE DIREITOS AUTORAIS SÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTROS\nRESPONSABILIDADE, SEJA EM AÇÃO DE CONTRATO, DELITO OU DE OUTRA FORMA, DECORRENTE DE,\nFORA DE OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO\nPROGRAMAS.",
-                "nl": "* Eerste implementatie van commeo-actuatoren\n\n## 0.0.1 (2021-06-16)\n* Eerste uitgave\n\n## Licentie\nMIT-licentie\n\nCopyright (c) 2021 Rintrium<main@rintrium.de>\n\nHierbij wordt gratis toestemming verleend aan eenieder die een exemplaar verkrijgt\nvan deze software en bijbehorende documentatiebestanden (de \"Software\"), om\nin de Software zonder beperking, inclusief maar niet beperkt tot de rechten\ngebruiken, kopiëren, wijzigen, samenvoegen, publiceren, distribueren, in sublicentie geven en/of verkopen\nkopieën van de Software, en om personen aan wie de Software is\ndaartoe ingericht, onder de volgende voorwaarden:\n\nDe bovenstaande copyrightkennisgeving en deze toestemmingskennisgeving zullen worden opgenomen in alle\nkopieën of substantiële delen van de Software.\n\nDE SOFTWARE WORDT GELEVERD \"AS IS\", ZONDER ENIGE GARANTIE, EXPLICIET OF\nIMPLICIET, INCLUSIEF MAAR NIET BEPERKT TOT DE GARANTIES VAN VERKOOPBAARHEID,\nGESCHIKTHEID VOOR EEN BEPAALD DOEL EN NIET-INBREUK. IN GEEN GEVAL ZAL DE\nAUTEURS OF AUTEURSRECHTHOUDERS ZIJN AANSPRAKELIJK VOOR ENIGE CLAIM, SCHADE OF ANDERE\nAANSPRAKELIJKHEID, ONGEACHT UIT EEN OVEREENKOMST, ONRECHTMATIGHEID OF ANDERSZINS, VOORTVLOEIEND UIT,\nBUITEN OF IN VERBAND MET DE SOFTWARE OF HET GEBRUIK OF ANDERE HANDELINGEN IN DE\nSOFTWARE.",
-                "fr": "* Première implémentation des actionneurs commeo\n\n## 0.0.1 (2021-06-16)\n* Première version\n\n## Licence\nLicence MIT\n\nCopyright (c) 2021 Rintrium<main@rintrium.de>\n\nPermission est accordée, sans frais, à toute personne obtenant une copie\nde ce logiciel et des fichiers de documentation associés (le \"Logiciel\"), pour traiter\ndans le Logiciel sans restriction, y compris, sans limitation, les droits\nutiliser, copier, modifier, fusionner, publier, distribuer, sous-licencier et/ou vendre\ncopies du Logiciel et de permettre aux personnes auxquelles le Logiciel est\nfourni à cet effet, sous réserve des conditions suivantes :\n\nL'avis de droit d'auteur ci-dessus et cet avis d'autorisation doivent être inclus dans tous les\ndes copies ou des parties substantielles du Logiciel.\n\nLE LOGICIEL EST FOURNI « EN L'ÉTAT », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU\nIMPLICITE, Y COMPRIS MAIS NON LIMITÉ AUX GARANTIES DE QUALITÉ MARCHANDE,\nAPTITUDE A UN USAGE PARTICULIER ET NON CONTREFAÇON. EN AUCUN CAS, LE\nLES AUTEURS OU TITULAIRES DE DROITS D'AUTEUR SERONT RESPONSABLES DE TOUTE RÉCLAMATION, DOMMAGES OU AUTRE\nRESPONSABILITÉ, QUE CE SOIT DANS UNE ACTION CONTRACTUELLE, DÉLICTUELLE OU AUTRE, DÉCOULANT DE,\nHORS OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU D'AUTRES OPÉRATIONS DANS LE\nLOGICIEL.",
-                "it": "* Prima implementazione di attuatori commeo\n\n## 0.0.1 (2021-06-16)\n* Versione iniziale\n\n## Licenza\nLicenza MIT\n\nCopyright (c) 2021 Rintrium<main@rintrium.de>\n\nL'autorizzazione è concessa, a titolo gratuito, a chiunque ne ottenga una copia\ndi questo software e dei file di documentazione associati (il \"Software\"), per trattare\nnel Software senza restrizioni, inclusi senza limitazione i diritti\nutilizzare, copiare, modificare, unire, pubblicare, distribuire, concedere in sublicenza e/o vendere\ncopie del Software e per consentire alle persone a cui il Software è\narredato a tal fine, alle seguenti condizioni:\n\nL'avviso di copyright di cui sopra e questo avviso di autorizzazione devono essere inclusi in tutto\ncopie o parti sostanziali del Software.\n\nIL SOFTWARE VIENE FORNITO \"COS COM'È\", SENZA GARANZIE DI ALCUN TIPO, ESPRESSE O\nIMPLICITA, COMPRESE MA NON LIMITATE ALLE GARANZIE DI COMMERCIABILITÀ,\nIDONEITÀ A UNO SCOPO PARTICOLARE E NON VIOLAZIONE. IN NESSUN CASO IL\nGLI AUTORI O I TITOLARI DEL COPYRIGHT SARANNO RESPONSABILI PER QUALSIASI RECLAMO, DANNI O ALTRO\nRESPONSABILITÀ, SIA IN AZIONE CONTRATTUALE, ILLECITO O ALTRO, DERIVANTE DA,\nFUORI O IN CONNESSIONE CON IL SOFTWARE O L'UTILIZZO O ALTRI TRATTAMENTI IN\nSOFTWARE.",
-                "es": "* Primera implementación de actuadores commeo\n\n## 0.0.1 (16-06-2021)\n* Versión inicial\n\n## Licencia\nLicencia MIT\n\nCopyright (c) 2021 Rintrium<main@rintrium.de>\n\nPor la presente se otorga permiso, sin cargo, a cualquier persona que obtenga una copia.\nde este software y los archivos de documentación asociados (el \"Software\"), para tratar\nen el Software sin restricción, incluidos, entre otros, los derechos\npara usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y / o vender\ncopias del Software, y para permitir a las personas a las que el Software es\namueblado para ello, sujeto a las siguientes condiciones:\n\nEl aviso de copyright anterior y este aviso de permiso se incluirán en todos\ncopias o partes sustanciales del Software.\n\nEL SOFTWARE SE PROPORCIONA \"TAL CUAL\", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O\nIMPLÍCITAS, INCLUIDAS PERO NO LIMITADAS A LAS GARANTÍAS DE COMERCIABILIDAD,\nAPTITUD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO\nLOS AUTORES O TITULARES DE LOS DERECHOS DE AUTOR SERÁN RESPONSABLES DE CUALQUIER RECLAMO, DAÑOS U OTROS\nRESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O DE OTRO MODO, QUE SURJA DE,\nFUERA O EN RELACIÓN CON EL SOFTWARE O EL USO U OTROS NEGOCIOS EN EL\nSOFTWARE.",
-                "pl": "* Pierwsze wdrożenie siłowników commeo\n\n## 0.0.1 (2021-06-16)\n* Pierwsze wydanie\n\n## Licencja\nLicencja MIT\n\nPrawa autorskie (c) 2021 Rintrium<main@rintrium.de>\n\nNiniejszym udziela się nieodpłatnego zezwolenia każdej osobie otrzymującej kopię\ntego oprogramowania i związanych z nim plików dokumentacji („Oprogramowanie”), aby handlować\nw Oprogramowaniu bez ograniczeń, w tym bez ograniczeń praw\nużywać, kopiować, modyfikować, łączyć, publikować, rozpowszechniać, udzielać sublicencji i/lub sprzedawać\nkopie Oprogramowania oraz zezwalać osobom, dla których Oprogramowanie jest\nw tym celu, z zastrzeżeniem następujących warunków:\n\nPowyższa informacja o prawach autorskich i niniejsza informacja o pozwoleniu będą zawarte we wszystkich .\nkopie lub istotne części Oprogramowania.\n\nOPROGRAMOWANIE JEST DOSTARCZANE „TAK JAK JEST”, BEZ JAKICHKOLWIEK GWARANCJI, WYRAŹNYCH LUB\nDOROZUMIANYCH, W TYM MIĘDZY INNYMI GWARANCJE WARTOŚCI HANDLOWEJ,\nPRZYDATNOŚĆ DO OKREŚLONEGO CELU I NIENARUSZALNOŚCI. W ŻADNYM WYPADKU NIE\nAUTORZY LUB POSIADACZE PRAW AUTORSKICH PONOSZĄ ODPOWIEDZIALNOŚĆ ZA WSZELKIE ROSZCZENIA, SZKODY LUB INNE\nODPOWIEDZIALNOŚĆ UMOWNA, CZYNNA LUB W INNY SPOSÓB, WYNIKAJĄCA Z,\nNIE ZWIĄZANE Z OPROGRAMOWANIEM LUB KORZYSTANIEM LUB INNYMI CZYNNOŚCIAMI W\nOPROGRAMOWANIE.",
-                "zh-cn": "* 第一次实现 commeo 执行器\n\n## 0.0.1 (2021-06-16)\n* 初始发行\n\n＃＃ 执照\n麻省理工学院执照\n\n版权所有 (c) 2021 Rintrium<main@rintrium.de>\n\n特此向任何获得副本的人免费授予许可\n本软件和相关文档文件（“软件”），以处理\n在软件中不受限制，包括但不限于权利\n使用、复制、修改、合并、发布、分发、再许可和/或出售\n软件的副本，并允许软件所属的人\n提供这样做，但须符合以下条件：\n\n以上版权声明和本许可声明应包含在所有\n本软件的副本或重要部分。\n\n该软件“按原样”提供，不提供任何形式的明示或保证\n暗示，包括但不限于适销性保证，\n适用于特定目的且不侵权。在任何情况下都不得\n作者或版权所有者应对任何索赔、损害或其他\n责任，无论是在合同诉讼、侵权行为或其他方面，由以下原因引起的，\n与本软件或本软件中的使用或其他交易无关或与之相关\n软件。"
-            },
-            "0.0.1": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "zh-cn": "首次出版"
-            }
-        },
-        "titleLang": {
-            "en": "SelveRF",
-            "de": "SelveRF",
-            "ru": "SelveRF",
-            "pt": "SelveRF",
-            "nl": "SelveRF",
-            "fr": "SelveRF",
-            "it": "SelveRF",
-            "es": "SelveRF",
-            "pl": "SelveRF",
-            "zh-cn": "SelveRF"
-        },
-        "desc": {
-            "en": "Connection with Selve actuators and sensors through USB-Gateway",
-            "de": "Verbindung zu Selve Geräten mittels USB-Gateway",
-            "ru": "Connection with Selve actuators and sensors through USB-Gateway",
-            "pt": "Connection with Selve actuators and sensors through USB-Gateway",
-            "nl": "Connection with Selve actuators and sensors through USB-Gateway",
-            "fr": "Connection with Selve actuators and sensors through USB-Gateway",
-            "it": "Connection with Selve actuators and sensors through USB-Gateway",
-            "es": "Connection with Selve actuators and sensors through USB-Gateway",
-            "pl": "Connection with Selve actuators and sensors through USB-Gateway",
-            "zh-cn": "Connection with Selve actuators and sensors through USB-Gateway"
-        },
-        "authors": [
-            "Rintrium <main@rintrium.de>"
-        ],
-        "keywords": [
-            "Gateway",
-            "Selve",
-            "Rollershutter"
-        ],
-        "license": "MIT",
-        "platform": "Javascript/Node.js",
-        "icon": "selverf.png",
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/Rintrium/ioBroker.selverf/master/admin/selverf.png",
-        "readme": "https://github.com/Rintrium/ioBroker.selverf/blob/master/README.md",
-        "loglevel": "info",
-        "mode": "daemon",
-        "type": "iot-systems",
-        "compact": true,
-        "connectionType": "local",
-        "dataSource": "push",
-        "materialize": true,
-        "dependencies": [
-            {
-                "js-controller": ">=2.0.0"
-            }
-        ]
+  "common": {
+    "name": "selverf",
+    "title": "selveRF",
+    "version": "0.6.2",
+    "news": {
+      "0.6.2": {
+        "en": "Fix critical error for sensors and senders",
+        "de": "Beheben Sie kritische Fehler für Sensoren und Sender",
+        "ru": "Исправить критическую ошибку для датчиков и отправителей",
+        "pt": "Corrigir erro crítico para sensores e remetentes",
+        "nl": "Kritieke fout voor sensoren en afzenders oplossen",
+        "fr": "Correction d'une erreur critique pour les capteurs et les expéditeurs",
+        "it": "Risolto l'errore critico per sensori e mittenti",
+        "es": "Solucionar error crítico para sensores y remitentes",
+        "pl": "Napraw błąd krytyczny czujników i nadawców",
+        "zh-cn": "修复传感器和发送器的严重错误"
+      },
+      "0.6.1": {
+        "en": "Stable version release\nMinor (non functional) changes",
+        "de": "Stabile version veröffentlich\nKleine (nicht funktionale) Änderungen",
+        "ru": "Stable version release\nMinor (non functional) changes",
+        "pt": "Stable version release\nMinor (non functional) changes",
+        "nl": "Stable version release\nMinor (non functional) changes",
+        "fr": "Stable version release\nMinor (non functional) changes",
+        "it": "Stable version release\nMinor (non functional) changes",
+        "es": "Stable version release\nMinor (non functional) changes",
+        "pl": "Stable version release\nMinor (non functional) changes",
+        "zh-cn": "Stable version release\nMinor (non functional) changes"
+      },
+      "0.5.3": {
+        "en": "Improved error handling and longer wait period, before the connection with the gateway resets\nscaledPosition was split into scaledPosition and scaledTargetPosition\nInverted states for scaledPosition and scaledTargetPosition were added\nGateway log events now are properly logged in ioBroker as debug-messages",
+        "de": "Verbesserte Fehlerbehandlung und längere Wartezeit, bevor die Verbindung mit dem Gateway zurückgesetzt wird\nscaledPosition wurde in scaledPosition und scaledTargetPosition aufgeteilt\nInvertierte Zustände für scaledPosition und scaledTargetPosition wurden hinzugefügt\nGateway-Protokollereignisse werden jetzt ordnungsgemäß in ioBroker als Debug-Nachrichten protokolliert",
+        "ru": "Улучшенная обработка ошибок и более длительный период ожидания перед сбросом соединения со шлюзом.\nscaledPosition было разделено на scaledPosition и scaledTargetPosition\nДобавлены инвертированные состояния для scaledPosition и scaledTargetPosition\nСобытия журнала шлюза теперь правильно регистрируются в ioBroker как отладочные сообщения.",
+        "pt": "Tratamento de erros aprimorado e período de espera mais longo, antes que a conexão com o gateway seja redefinida\nscaledPosition foi dividido em scaledPosition e scaledTargetPosition\nEstados invertidos para scaledPosition e scaledTargetPosition foram adicionados\nOs eventos de registro do gateway agora são devidamente registrados no ioBroker como mensagens de depuração",
+        "nl": "Verbeterde foutafhandeling en langere wachttijd, voordat de verbinding met de gateway wordt gereset\nscaledPosition is opgesplitst in scaledPosition en scaledTargetPosition\nOmgekeerde statussen voor scaledPosition en scaledTargetPosition zijn toegevoegd\nGateway-logboekgebeurtenissen worden nu correct geregistreerd in ioBroker als foutopsporingsberichten",
+        "fr": "Gestion des erreurs améliorée et période d'attente plus longue, avant la réinitialisation de la connexion avec la passerelle\nscaledPosition a été divisé en scaledPosition et scaledTargetPosition\nDes états inversés pour scaledPosition et scaledTargetPosition ont été ajoutés\nLes événements du journal de la passerelle sont désormais correctement enregistrés dans ioBroker en tant que messages de débogage",
+        "it": "Gestione degli errori migliorata e periodo di attesa più lungo, prima che la connessione con il gateway si ripristini\nscaledPosition è stato suddiviso in scaledPosition e scaledTargetPosition\nSono stati aggiunti stati invertiti per scaledPosition e scaledTargetPosition\nGli eventi del registro del gateway ora vengono registrati correttamente in ioBroker come messaggi di debug",
+        "es": "Manejo de errores mejorado y un período de espera más largo, antes de que se restablezca la conexión con la puerta de enlace\nscaledPosition se dividió en scaledPosition y scaledTargetPosition\nSe agregaron estados invertidos para scaledPosition y scaledTargetPosition\nLos eventos de registro de la puerta de enlace ahora se registran correctamente en ioBroker como mensajes de depuración",
+        "pl": "Ulepszona obsługa błędów i dłuższy czas oczekiwania na zresetowanie połączenia z bramą\nscaledPosition zostało podzielone na scaledPosition i scaledTargetPosition\nDodano stany odwrócone dla scaledPosition i scaledTargetPosition\nZdarzenia dziennika bramy są teraz poprawnie rejestrowane w ioBroker jako komunikaty debugowania",
+        "zh-cn": "在与网关的连接重置之前改进了错误处理和更长的等待时间\nscaledPosition 被拆分为 scaledPosition 和 scaledTargetPosition\n添加了 scaledPosition 和 scaledTargetPosition 的反转状态\n网关日志事件现在作为调试消息正确记录在 ioBroker 中"
+      },
+      "0.5.2": {
+        "en": "Fixed drivePos2 command for iveo actuators",
+        "de": "Behobener drivePos2-Befehl für iveo-Aktoren",
+        "ru": "Фиксированная команда drivePos2 для приводов iveo",
+        "pt": "Comando drivePos2 fixo para atuadores iveo",
+        "nl": "Vast drivePos2-commando voor iveo-actuators",
+        "fr": "Commande drivePos2 fixe pour les actionneurs iveo",
+        "it": "Comando drivePos2 fisso per attuatori iveo",
+        "es": "Comando drivePos2 fijo para actuadores iveo",
+        "pl": "Naprawiono polecenie drivePos2 dla siłowników iveo",
+        "zh-cn": "修复了 iveo 执行器的 drivePos2 命令"
+      },
+      "0.5.1": {
+        "en": "Bugfix",
+        "de": "Fehlerbehebung",
+        "ru": "Исправлена ошибка",
+        "pt": "Bugfix",
+        "nl": "Bugfix",
+        "fr": "Correction d'un bug",
+        "it": "Risoluzione del problema",
+        "es": "Arreglo del fallo",
+        "pl": "Naprawa błędów",
+        "zh-cn": "错误修正"
+      },
+      "0.5.0": {
+        "en": "Added support for senders\niveo actuators now have \"lastSentCommand\" to keep track of the status of the actuator",
+        "de": "Unterstützung für Absender hinzugefügt\niveo Aktoren verfügen jetzt über „lastSentCommand“, um den Status des Aktors zu verfolgen",
+        "ru": "Добавлена поддержка отправителей\nУ приводов iveo теперь есть \"lastSentCommand\" для отслеживания состояния привода.",
+        "pt": "Adicionado suporte para remetentes\nAtuadores iveo agora têm \"lastSentCommand\" para acompanhar o status do atuador",
+        "nl": "Ondersteuning toegevoegd voor afzenders\niveo-actuators hebben nu \"lastSentCommand\" om de status van de actuator bij te houden",
+        "fr": "Ajout du support pour les expéditeurs\nLes actionneurs iveo ont maintenant \"lastSentCommand\" pour garder une trace de l'état de l'actionneur",
+        "it": "Aggiunto supporto per i mittenti\nGli attuatori iveo ora hanno \"lastSentCommand\" per tenere traccia dello stato dell'attuatore",
+        "es": "Soporte agregado para remitentes\nLos actuadores iveo ahora tienen \"lastSentCommand\" para realizar un seguimiento del estado del actuador",
+        "pl": "Dodano wsparcie dla nadawców\nSiłowniki iveo mają teraz funkcję „lastSentCommand”, aby śledzić stan siłownika",
+        "zh-cn": "添加了对发件人的支持\niveo 执行器现在具有“lastSentCommand”来跟踪执行器的状态"
+      },
+      "0.4.0": {
+        "en": "Added iveo actuators\nAdded sensors",
+        "de": "iveo-Aktoren hinzugefügt\nSensoren hinzugefügt",
+        "ru": "Добавлены приводы iveo\nДобавлены датчики",
+        "pt": "Adicionados atuadores iveo\nSensores adicionados",
+        "nl": "Iveo-actuatoren toegevoegd\nSensoren toegevoegd",
+        "fr": "Ajout d'actionneurs iveo\nCapteurs ajoutés",
+        "it": "Attuatori iveo aggiunti\nSensori aggiunti",
+        "es": "Actuadores iveo agregados\nSensores agregados",
+        "pl": "Dodano siłowniki iveo\nDodano czujniki",
+        "zh-cn": "添加了 iveo 执行器\n添加传感器"
+      }
     },
-    "native": {
-        "usbGatewayPath": "/dev/ttyUSB0"
+    "titleLang": {
+      "en": "SelveRF",
+      "de": "SelveRF",
+      "ru": "SelveRF",
+      "pt": "SelveRF",
+      "nl": "SelveRF",
+      "fr": "SelveRF",
+      "it": "SelveRF",
+      "es": "SelveRF",
+      "pl": "SelveRF",
+      "zh-cn": "SelveRF"
     },
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "info",
-            "type": "channel",
-            "common": {
-                "name": "Information"
-            },
-            "native": {}
-        },
-        {
-            "_id": "info.connection",
-            "type": "state",
-            "common": {
-                "role": "indicator.connected",
-                "name": "If communication with the USB-Gateway works",
-                "type": "boolean",
-                "read": true,
-                "write": false,
-                "def": false
-            },
-            "native": {}
-        }
+    "desc": {
+      "en": "Connection with Selve actuators and sensors through USB-Gateway",
+      "de": "Verbindung zu Selve Geräten mittels USB-Gateway",
+      "ru": "Connection with Selve actuators and sensors through USB-Gateway",
+      "pt": "Connection with Selve actuators and sensors through USB-Gateway",
+      "nl": "Connection with Selve actuators and sensors through USB-Gateway",
+      "fr": "Connection with Selve actuators and sensors through USB-Gateway",
+      "it": "Connection with Selve actuators and sensors through USB-Gateway",
+      "es": "Connection with Selve actuators and sensors through USB-Gateway",
+      "pl": "Connection with Selve actuators and sensors through USB-Gateway",
+      "zh-cn": "Connection with Selve actuators and sensors through USB-Gateway"
+    },
+    "authors": [
+      "Rintrium <main@rintrium.de>"
+    ],
+    "keywords": [
+      "Gateway",
+      "Selve",
+      "Rollershutter"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "icon": "selverf.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/Rintrium/ioBroker.selverf/master/admin/selverf.png",
+    "readme": "https://github.com/Rintrium/ioBroker.selverf/blob/master/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "iot-systems",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "push",
+    "materialize": true,
+    "dependencies": [
+      {
+        "js-controller": ">=2.0.0"
+      }
     ]
+  },
+  "native": {
+    "usbGatewayPath": "/dev/ttyUSB0"
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "If communication with the USB-Gateway works",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }
