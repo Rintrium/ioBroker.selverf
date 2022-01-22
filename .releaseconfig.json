@@ -1,5 +1,5 @@
 {
-	"dry": true,
+	"dry": false,
     "bump": "patch",
 	"plugins": ["iobroker"]
 }
