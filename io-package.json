@@ -2,8 +2,21 @@
   "common": {
     "name": "selverf",
     "title": "selveRF",
-    "version": "0.6.2",
+    "version": "0.6.3",
     "news": {
+      "0.6.3": {
+        "en": "Update dependencies",
+        "de": "Abhängigkeiten aktualisieren",
+        "ru": "Обновить зависимости",
+        "pt": "Dependências de atualização",
+        "nl": "Update afhankelijkheid",
+        "fr": "Mettre à jour les dépendances",
+        "it": "Dipendenze di aggiornamento",
+        "es": "Actualizar las dependencias",
+        "pl": "Zależności aktualnej",
+        "uk": "Оновлення залежності",
+        "zh-cn": "最新依赖"
+      },
       "0.6.2": {
         "en": "Fix critical error for sensors and senders",
         "de": "Beheben Sie kritische Fehler für Sensoren und Sender",
@@ -75,18 +88,6 @@
         "es": "Soporte agregado para remitentes\nLos actuadores iveo ahora tienen \"lastSentCommand\" para realizar un seguimiento del estado del actuador",
         "pl": "Dodano wsparcie dla nadawców\nSiłowniki iveo mają teraz funkcję „lastSentCommand”, aby śledzić stan siłownika",
         "zh-cn": "添加了对发件人的支持\niveo 执行器现在具有“lastSentCommand”来跟踪执行器的状态"
-      },
-      "0.4.0": {
-        "en": "Added iveo actuators\nAdded sensors",
-        "de": "iveo-Aktoren hinzugefügt\nSensoren hinzugefügt",
-        "ru": "Добавлены приводы iveo\nДобавлены датчики",
-        "pt": "Adicionados atuadores iveo\nSensores adicionados",
-        "nl": "Iveo-actuatoren toegevoegd\nSensoren toegevoegd",
-        "fr": "Ajout d'actionneurs iveo\nCapteurs ajoutés",
-        "it": "Attuatori iveo aggiunti\nSensori aggiunti",
-        "es": "Actuadores iveo agregados\nSensores agregados",
-        "pl": "Dodano siłowniki iveo\nDodano czujniki",
-        "zh-cn": "添加了 iveo 执行器\n添加传感器"
       }
     },
     "titleLang": {
