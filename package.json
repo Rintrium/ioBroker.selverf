@@ -18,7 +18,7 @@
     "url": "https://github.com/Rintrium/ioBroker.selverf"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^2.6.7",
+    "@iobroker/adapter-core": "^2.6.8",
     "base-64": "^1.0.0",
     "bitset": "^5.1.1",
     "serialport": "^10.5.0",
