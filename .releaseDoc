@@ -1,3 +1,5 @@
 Trigger release with
 
 npm run release -- -c
+
+npm publish
