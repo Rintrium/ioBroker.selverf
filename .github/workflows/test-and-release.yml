@@ -35,13 +35,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-<<<<<<< Updated upstream
-        node-version: [16.x, 18.x, 20.x]
-        os: [ubuntu-latest, windows-latest, macos-latest]
-=======
         node-version: [18.x, 20.x, 22.x]
         os: [ubuntu-latest]
->>>>>>> Stashed changes
 
     steps:
       - uses: ioBroker/testing-action-adapter@v1
