@@ -118,6 +118,7 @@
       "Rintrium <main@rintrium.de>"
     ],
     "keywords": [
+      "iobroker",
       "Gateway",
       "Selve",
       "Rollershutter"
@@ -137,12 +138,17 @@
     "materialize": true,
     "dependencies": [
       {
-        "js-controller": ">=2.0.0"
+        "js-controller": ">=6.0.11"
       }
+    ],
+    "globalDependencies": [
+            {
+                "admin": "7.0.23"
+            }
     ]
   },
   "native": {
-    "usbGatewayPath": "/dev/ttyUSB0"
+        "usbGatewayPath": "/dev/ttyUSB0"
   },
   "objects": [],
   "instanceObjects": [

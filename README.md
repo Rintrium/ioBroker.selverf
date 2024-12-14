@@ -6,7 +6,6 @@
 ![Number of Installations (latest)](https://iobroker.live/badges/selverf-installed.svg)
 ![Number of Installations (stable)](https://iobroker.live/badges/selverf-stable.svg)
 
-[![NPM](https://nodei.co/npm/iobroker.selverf.png?downloads=true)](https://nodei.co/npm/iobroker.selverf/)
 
 **Tests:** ![Test and Release](https://github.com/Rintrium/ioBroker.selverf/workflows/Test%20and%20Release/badge.svg)
 

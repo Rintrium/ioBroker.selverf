@@ -1,0 +1,11 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "usbGatewayPath": {
+            "type": "text",
+            "label": "USB Gateway Path",
+            "newLine": true
+        }
+    }
+}
