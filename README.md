@@ -18,7 +18,7 @@ Connection with Selve actuators, sensors and senders through USB-Gateway
 This project is not affiliated with Selve. It is a personal project.
 
 ## Changelog
-## **WORK IN PROGRESS**
+### **WORK IN PROGRESS**
 * Updated dependencies
 * General maintenance
 * Switch to jsonConfig.json adminUI with responsive design
