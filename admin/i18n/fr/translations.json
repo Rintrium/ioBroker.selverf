@@ -1,5 +1,4 @@
 {
     "selverf adapter settings": "Paramètres d'adaptateur pour selverf",
-    "option1": "option1",
-    "option2": "option2"
+    "usbGatewayPath": "Chemin d'accès à la passerelle USB"
 }

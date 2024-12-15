@@ -1,5 +1,4 @@
 {
     "selverf adapter settings": "Налаштування адаптера для selverf",
-    "option1": "варіант1",
-    "option2": "варіант2"
+    "usbGatewayPath": "Шлях до USB-шлюзу"
 }

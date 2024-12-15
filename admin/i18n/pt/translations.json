@@ -1,5 +1,4 @@
 {
     "selverf adapter settings": "Configurações do adaptador para selverf",
-    "option1": "opção1",
-    "option2": "opção2"
+    "usbGatewayPath": "Caminho para o gateway USB"
 }

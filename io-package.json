@@ -27,7 +27,8 @@
         "it": "Risolto l'errore critico per sensori e mittenti",
         "es": "Solucionar error crítico para sensores y remitentes",
         "pl": "Napraw błąd krytyczny czujników i nadawców",
-        "zh-cn": "修复传感器和发送器的严重错误"
+        "zh-cn": "修复传感器和发送器的严重错误",
+        "uk": "Виправлення критичної помилки для датчиків і відправників"
       },
       "0.6.1": {
         "en": "Stable version release\nMinor (non functional) changes",
@@ -39,7 +40,8 @@
         "it": "Stable version release\nMinor (non functional) changes",
         "es": "Stable version release\nMinor (non functional) changes",
         "pl": "Stable version release\nMinor (non functional) changes",
-        "zh-cn": "Stable version release\nMinor (non functional) changes"
+        "zh-cn": "Stable version release\nMinor (non functional) changes",
+        "uk": "Випуск стабільної версії\nНезначні (нефункціональні) зміни"
       },
       "0.5.3": {
         "en": "Improved error handling and longer wait period, before the connection with the gateway resets\nscaledPosition was split into scaledPosition and scaledTargetPosition\nInverted states for scaledPosition and scaledTargetPosition were added\nGateway log events now are properly logged in ioBroker as debug-messages",
@@ -51,7 +53,8 @@
         "it": "Gestione degli errori migliorata e periodo di attesa più lungo, prima che la connessione con il gateway si ripristini\nscaledPosition è stato suddiviso in scaledPosition e scaledTargetPosition\nSono stati aggiunti stati invertiti per scaledPosition e scaledTargetPosition\nGli eventi del registro del gateway ora vengono registrati correttamente in ioBroker come messaggi di debug",
         "es": "Manejo de errores mejorado y un período de espera más largo, antes de que se restablezca la conexión con la puerta de enlace\nscaledPosition se dividió en scaledPosition y scaledTargetPosition\nSe agregaron estados invertidos para scaledPosition y scaledTargetPosition\nLos eventos de registro de la puerta de enlace ahora se registran correctamente en ioBroker como mensajes de depuración",
         "pl": "Ulepszona obsługa błędów i dłuższy czas oczekiwania na zresetowanie połączenia z bramą\nscaledPosition zostało podzielone na scaledPosition i scaledTargetPosition\nDodano stany odwrócone dla scaledPosition i scaledTargetPosition\nZdarzenia dziennika bramy są teraz poprawnie rejestrowane w ioBroker jako komunikaty debugowania",
-        "zh-cn": "在与网关的连接重置之前改进了错误处理和更长的等待时间\nscaledPosition 被拆分为 scaledPosition 和 scaledTargetPosition\n添加了 scaledPosition 和 scaledTargetPosition 的反转状态\n网关日志事件现在作为调试消息正确记录在 ioBroker 中"
+        "zh-cn": "在与网关的连接重置之前改进了错误处理和更长的等待时间\nscaledPosition 被拆分为 scaledPosition 和 scaledTargetPosition\n添加了 scaledPosition 和 scaledTargetPosition 的反转状态\n网关日志事件现在作为调试消息正确记录在 ioBroker 中",
+        "uk": "Покращена обробка помилок і довший період очікування перед скиданням з’єднання зі шлюзом\nscaledPosition було розділено на scaledPosition і scaledTargetPosition\nДодано інвертовані стани для scaledPosition і scaledTargetPosition\nПодії журналу шлюзу тепер належним чином реєструються в ioBroker як повідомлення про налагодження"
       },
       "0.5.2": {
         "en": "Fixed drivePos2 command for iveo actuators",
@@ -63,7 +66,8 @@
         "it": "Comando drivePos2 fisso per attuatori iveo",
         "es": "Comando drivePos2 fijo para actuadores iveo",
         "pl": "Naprawiono polecenie drivePos2 dla siłowników iveo",
-        "zh-cn": "修复了 iveo 执行器的 drivePos2 命令"
+        "zh-cn": "修复了 iveo 执行器的 drivePos2 命令",
+        "uk": "Виправлена ​​команда drivePos2 для приводів iveo"
       },
       "0.5.1": {
         "en": "Bugfix",
@@ -75,7 +79,8 @@
         "it": "Risoluzione del problema",
         "es": "Arreglo del fallo",
         "pl": "Naprawa błędów",
-        "zh-cn": "错误修正"
+        "zh-cn": "错误修正",
+        "uk": "Виправлення помилок"
       },
       "0.5.0": {
         "en": "Added support for senders\niveo actuators now have \"lastSentCommand\" to keep track of the status of the actuator",
@@ -87,7 +92,8 @@
         "it": "Aggiunto supporto per i mittenti\nGli attuatori iveo ora hanno \"lastSentCommand\" per tenere traccia dello stato dell'attuatore",
         "es": "Soporte agregado para remitentes\nLos actuadores iveo ahora tienen \"lastSentCommand\" para realizar un seguimiento del estado del actuador",
         "pl": "Dodano wsparcie dla nadawców\nSiłowniki iveo mają teraz funkcję „lastSentCommand”, aby śledzić stan siłownika",
-        "zh-cn": "添加了对发件人的支持\niveo 执行器现在具有“lastSentCommand”来跟踪执行器的状态"
+        "zh-cn": "添加了对发件人的支持\niveo 执行器现在具有“lastSentCommand”来跟踪执行器的状态",
+        "uk": "Додано підтримку для відправників\nАктуатори iveo тепер мають «lastSentCommand» для відстеження стану приводу"
       }
     },
     "titleLang": {
@@ -100,7 +106,8 @@
       "it": "SelveRF",
       "es": "SelveRF",
       "pl": "SelveRF",
-      "zh-cn": "SelveRF"
+      "zh-cn": "SelveRF",
+      "uk": "SelveRF"
     },
     "desc": {
       "en": "Connection with Selve actuators and sensors through USB-Gateway",
@@ -112,7 +119,8 @@
       "it": "Connection with Selve actuators and sensors through USB-Gateway",
       "es": "Connection with Selve actuators and sensors through USB-Gateway",
       "pl": "Connection with Selve actuators and sensors through USB-Gateway",
-      "zh-cn": "Connection with Selve actuators and sensors through USB-Gateway"
+      "zh-cn": "Connection with Selve actuators and sensors through USB-Gateway",
+      "uk": "Підключення до актуаторів і датчиків Selve через USB-шлюз"
     },
     "authors": [
       "Rintrium <main@rintrium.de>"
@@ -136,7 +144,7 @@
     "connectionType": "local",
     "dataSource": "push",
     "adminUI": {
-            "config": "json"
+      "config": "json"
     },
     "dependencies": [
       {
@@ -144,13 +152,13 @@
       }
     ],
     "globalDependencies": [
-            {
-                "admin": ">=7.0.23"
-            }
+      {
+        "admin": ">=7.0.23"
+      }
     ]
   },
   "native": {
-        "usbGatewayPath": "/dev/ttyUSB0"
+    "usbGatewayPath": "/dev/ttyUSB0"
   },
   "objects": [],
   "instanceObjects": [

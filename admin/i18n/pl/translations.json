@@ -1,5 +1,4 @@
 {
     "selverf adapter settings": "Ustawienia adaptera dla selverf",
-    "option1": "opcja 1",
-    "option2": "opcja 2"
+    "usbGatewayPath": "Ścieżka do bramy USB"
 }
