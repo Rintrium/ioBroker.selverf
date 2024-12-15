@@ -105,7 +105,7 @@ This project is not affiliated with Selve. It is a personal project.
 ## License
 MIT License
 
-Copyright (c) 2021-2022 Rintrium <main@rintrium.de>
+Copyright (c) 2021-2024 Rintrium <main@rintrium.de>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
