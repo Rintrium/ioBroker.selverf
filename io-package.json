@@ -14,8 +14,21 @@
       "zh-cn": "SelveRF",
       "uk": "SelveRF"
     },
-    "version": "0.6.3",
+    "version": "0.7.0",
     "news": {
+      "0.7.0": {
+        "en": "Updated dependencies\nGeneral maintenance\nSwitch to jsonConfig.json adminUI with responsive design\nUpdated translations",
+        "de": "Aktualisierte Abhängigkeiten\nAllgemeine Instandhaltung\nWechseln Sie zu jsonConfig. json adminUI mit ansprechendem Design\nAktualisierte Übersetzungen",
+        "ru": "Обновленные зависимости\nОбщее обслуживание\nПереключиться на jsonConfig. json adminUI с отзывчивым дизайном\nОбновленные переводы",
+        "pt": "Dependências atualizadas\nManutenção geral\nMudar para jsonConfig. json adminUI com design responsivo\nTraduções atualizadas",
+        "nl": "Bijgewerkte afhankelijkheden\nAlgemeen onderhoud\nSchakel over op jsonConfig. json adminUI met responsief ontwerp\nBijgewerkte vertalingen",
+        "fr": "Dépendances actualisées\nEntretien général\nPassez à JsonConfig. Json adminUI avec un design réactif\nTraductions actualisées",
+        "it": "Dipendenze aggiornate\nManutenzione generale\nPassa a jsonConfig. json adminUI con design reattivo\nTraduzione aggiornata",
+        "es": "Dependencias actualizadas\nMantenimiento general\nCambia a jsonConfig. json adminUI con diseño sensible\nTraducciones actualizadas",
+        "pl": "Aktualizacja zależności\nKonserwacja ogólna\nPrzełącz na jsonConfig. json adminUI z reagującym designem\nAktualizacja tłumaczeń",
+        "uk": "Оновлені залежності\nГенеральне обслуговування\nПеремикач на jsonConfig. json adminUI з адаптивним дизайном\nОновлені переклади",
+        "zh-cn": "更新的依赖关系\n一般维修\n切换到jsonConfig. json 具有响应性设计的管理员\n最新翻译"
+      },
       "0.6.3": {
         "en": "Update dependencies",
         "de": "Abhängigkeiten aktualisieren",
@@ -93,19 +106,6 @@
         "pl": "Naprawa błędów",
         "zh-cn": "错误修正",
         "uk": "Виправлення помилок"
-      },
-      "0.5.0": {
-        "en": "Added support for senders\niveo actuators now have \"lastSentCommand\" to keep track of the status of the actuator",
-        "de": "Unterstützung für Absender hinzugefügt\niveo Aktoren verfügen jetzt über „lastSentCommand“, um den Status des Aktors zu verfolgen",
-        "ru": "Добавлена поддержка отправителей\nУ приводов iveo теперь есть \"lastSentCommand\" для отслеживания состояния привода.",
-        "pt": "Adicionado suporte para remetentes\nAtuadores iveo agora têm \"lastSentCommand\" para acompanhar o status do atuador",
-        "nl": "Ondersteuning toegevoegd voor afzenders\niveo-actuators hebben nu \"lastSentCommand\" om de status van de actuator bij te houden",
-        "fr": "Ajout du support pour les expéditeurs\nLes actionneurs iveo ont maintenant \"lastSentCommand\" pour garder une trace de l'état de l'actionneur",
-        "it": "Aggiunto supporto per i mittenti\nGli attuatori iveo ora hanno \"lastSentCommand\" per tenere traccia dello stato dell'attuatore",
-        "es": "Soporte agregado para remitentes\nLos actuadores iveo ahora tienen \"lastSentCommand\" para realizar un seguimiento del estado del actuador",
-        "pl": "Dodano wsparcie dla nadawców\nSiłowniki iveo mają teraz funkcję „lastSentCommand”, aby śledzić stan siłownika",
-        "zh-cn": "添加了对发件人的支持\niveo 执行器现在具有“lastSentCommand”来跟踪执行器的状态",
-        "uk": "Додано підтримку для відправників\nАктуатори iveo тепер мають «lastSentCommand» для відстеження стану приводу"
       }
     },
     "desc": {
@@ -131,8 +131,8 @@
     ],
     "tier": 2,
     "licenseInformation": {
-            "type": "free",
-            "license": "MIT"
+      "type": "free",
+      "license": "MIT"
     },
     "platform": "Javascript/Node.js",
     "icon": "selverf.png",
