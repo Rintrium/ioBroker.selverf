@@ -1,7 +1,19 @@
 {
   "common": {
     "name": "selverf",
-    "title": "selveRF",
+    "titleLang": {
+      "en": "SelveRF",
+      "de": "SelveRF",
+      "ru": "SelveRF",
+      "pt": "SelveRF",
+      "nl": "SelveRF",
+      "fr": "SelveRF",
+      "it": "SelveRF",
+      "es": "SelveRF",
+      "pl": "SelveRF",
+      "zh-cn": "SelveRF",
+      "uk": "SelveRF"
+    },
     "version": "0.6.3",
     "news": {
       "0.6.3": {
@@ -96,19 +108,6 @@
         "uk": "Додано підтримку для відправників\nАктуатори iveo тепер мають «lastSentCommand» для відстеження стану приводу"
       }
     },
-    "titleLang": {
-      "en": "SelveRF",
-      "de": "SelveRF",
-      "ru": "SelveRF",
-      "pt": "SelveRF",
-      "nl": "SelveRF",
-      "fr": "SelveRF",
-      "it": "SelveRF",
-      "es": "SelveRF",
-      "pl": "SelveRF",
-      "zh-cn": "SelveRF",
-      "uk": "SelveRF"
-    },
     "desc": {
       "en": "Connection with Selve actuators and sensors through USB-Gateway",
       "de": "Verbindung zu Selve Geräten mittels USB-Gateway",
@@ -126,12 +125,15 @@
       "Rintrium <main@rintrium.de>"
     ],
     "keywords": [
-      "iobroker",
       "Gateway",
       "Selve",
       "Rollershutter"
     ],
-    "license": "MIT",
+    "tier": 2,
+    "licenseInformation": {
+            "type": "free",
+            "license": "MIT"
+    },
     "platform": "Javascript/Node.js",
     "icon": "selverf.png",
     "enabled": true,
