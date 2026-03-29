@@ -11,12 +11,12 @@
 const utils = require("@iobroker/adapter-core");
 
 // Load your modules here, e.g.:
-// const fs = require("fs");
+// const fs = require("node:fs");
 
 const SelveUSBGateway = require("./lib/SelveUSBGateway.js");
 
 // Load your modules here, e.g.:
-// const fs = require("fs");
+// const fs = require("node:fs");
 
 class Selverf extends utils.Adapter {
     /**
