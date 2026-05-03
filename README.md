@@ -108,6 +108,8 @@ This project is not affiliated with Selve. It is a personal project.
 ### 0.0.1 (2021-06-16)
 * (Rintrium) initial release
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 MIT License
 
