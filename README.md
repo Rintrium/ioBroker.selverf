@@ -18,6 +18,9 @@ Connection with Selve actuators, sensors and senders through USB-Gateway
 This project is not affiliated with Selve. It is a personal project.
 
 ## Changelog
+
+### **WORK IN PROGRESS**
+- (iobroker-bot) Adapter requires node.js >= 22 now.
 ### 0.7.0 (2024-12-15)
 * Updated dependencies
 * General maintenance
